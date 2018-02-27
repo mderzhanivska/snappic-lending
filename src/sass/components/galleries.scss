@@ -1,0 +1,59 @@
+.galleries {
+    padding-top: 131px;
+}
+.wrap {
+    display: flex;
+    &__text {
+
+    }
+}
+.description {
+    padding-left: 10px;
+    &__comment {
+        color: $almost-black;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2.45px;
+    }
+    &__title {
+        padding-top: 27px;
+        font-family: 'Adobe Caslon Pro', sans-serif;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.69px;
+    }
+    &__desc {
+        padding-top: 24px;
+        color: $almost-black;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0.8px;
+    }
+    &__list {
+    }
+}
+.list {
+    padding-top: 33px;
+    padding-left: 60px;
+    &__title {
+        color: $orange;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 19px;
+        font-weight: 900;
+        letter-spacing: -1.15px;
+    }
+    &__desc {
+        padding-top: 9px;
+        color: $almost-black;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0.65px;
+    }
+}

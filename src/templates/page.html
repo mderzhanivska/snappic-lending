@@ -1,27 +1,20 @@
 ---
-title: Index page
+title:
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	
+
 	{# variable example #}
 	<h1>{{title}}</h1>
 
-	
+
 	{# partial example #}
 	{% include "partials/_header.html" %}
+	{% include "partials/_banner.html" %}
+	{% include "partials/_brands-minimized.html" %}
+	{% include "partials/_galleries.html" %}
+	{% include "partials/_sign.html" %}
 
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
 
 {% endblock %}
