@@ -1,10 +1,14 @@
 .galleries {
     padding-top: 131px;
+    padding-bottom: 142px;
 }
 .wrap {
     display: flex;
     &__text {
 
+    }
+    &__img {
+        margin-left: -62px;
     }
 }
 .description {
@@ -57,3 +61,5 @@
         letter-spacing: 0.65px;
     }
 }
+
+

@@ -1,0 +1,12 @@
+.shop {
+    background-image: url("../img/gradient-bg2.png");
+    background-repeat: no-repeat;
+    padding-top: 138px;
+    .wrap {
+        &__text {
+            padding-left: 40px;
+            padding-top: 100px;
+        }
+    }
+}
+

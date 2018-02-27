@@ -1,0 +1,61 @@
+.customize {
+    padding-bottom: 687px;
+    padding-top: 249px;
+    background-image: url("../img/gradient-bg3.png");
+    background-repeat: no-repeat;
+}
+.txt {
+    padding-left: 100px;
+    &__comment {
+        color: $almost-black;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1.45px;
+    }
+    &__title {
+        padding-top: 26px;
+        color: $black;
+        font-family: 'Adobe Caslon Pro', sans-serif;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.69px;
+    }
+}
+.wrapper {
+    display: flex;
+    position: relative;
+}
+.custom {
+    &__variant {
+
+    }
+    .insta {
+        position: absolute;
+        top: 49px;
+        left: -65px;
+    }
+    .stl {
+        position: absolute;
+        top: -125px;
+        left: 593px;
+    }
+    .stl-black-border {
+        position: absolute;
+        top: 155px;
+        left: 250px;
+    }
+    .stl-black-bg {
+        position: absolute;
+        top: 95px;
+        right: -65px;
+    }
+}
+.hover {
+    &__toggle {
+        text-align: center;
+    }
+}
+
