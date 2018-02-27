@@ -1,0 +1,5 @@
+ProjectTitle: snappic-lending
+
+PageList:
+- file: page.html
+  ready: 50
