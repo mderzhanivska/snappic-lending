@@ -1,3 +1,10 @@
-import sayHello from './lib/sayHello.js';
+import 'slick-carousel';
 
-sayHello();
+$('.slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true
+});
+
+

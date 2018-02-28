@@ -5,10 +5,11 @@
 .wrap {
     display: flex;
     &__text {
-
+        width: 50%;
     }
-    &__img {
-        margin-left: -62px;
+    &__examples {
+        width: 50%;
+        padding-top: 32px;
     }
 }
 .description {
@@ -74,6 +75,118 @@
         text-align: center;
         line-height: 50px;
     }
+}
+
+.example1 {
+    padding-left: 82px;
+    &__row {
+        width: 100%;
+        display: flex;
+        padding-top: 15px;
+    }
+    &__col {
+        width: 33.3%;
+        position: relative;
+        &:hover {
+            .example1__mask {
+                display: block;
+            }
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+        color: $black;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.71px;
+        border-radius: 21px;
+        background-color: $light-grey;
+        padding: 14px 29px;
+    }
+    &__mask {
+        display: none;
+        position: absolute;
+        width: 80%;
+        height: 85%;
+        background-color: rgba(255, 255, 255, 0.7);
+        top: 12px;
+        left: 12px;
+        text-align: center;
+    }
+    &__link {
+        display: inline-block;
+        margin-top: 74px;
+        color: $black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 0.4px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.ex {
+    padding-left: 82px;
+    &__row {
+        width: 100%;
+        display: flex;
+        padding-top: 15px;
+    }
+    &__col {
+        width: 33.3%;
+        position: relative;
+        &:hover {
+            .example1__mask {
+                display: block;
+            }
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+        color: $black;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.71px;
+        border-radius: 21px;
+        background-color: transparent;
+        padding: 14px 29px;
+    }
+    &__mask {
+        display: none;
+        position: absolute;
+        width: 80%;
+        height: 85%;
+        background-color: rgba(255, 255, 255, 0.7);
+        top: 12px;
+        left: 12px;
+        text-align: center;
+    }
+    &__link {
+        display: inline-block;
+        margin-top: 74px;
+        color: $black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 0.4px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.col {
+    width: 50%;
 }
 
 

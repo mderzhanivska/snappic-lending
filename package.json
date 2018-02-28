@@ -64,5 +64,8 @@
     "babel-runtime": "^5.0.0",
     "require-yaml": "^0.0.1",
     "lodash": "^4.3.0"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }
