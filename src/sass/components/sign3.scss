@@ -1,0 +1,15 @@
+.sign3 {
+    background-color: $white;
+    padding-top: 82px;
+    padding-bottom: 150px;
+    position: relative;
+    &:after {
+    	position: absolute;
+    	content: '';
+    	width: 130px;
+    	height: 126px;
+    	background-image: url("../img/stamp.png");
+    	bottom: 24px;
+    	right: 133px;
+    }
+}

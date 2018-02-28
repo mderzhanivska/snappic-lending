@@ -39,6 +39,18 @@
         letter-spacing: 0.8px;
     }
     &__list {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 45px;
+            top: 24px;
+            left: 0;
+            height: 45px;
+            border-radius: 50%;
+            background-image: url("../img/circle.png");
+            background-repeat: no-repeat;
+        }
     }
 }
 .list {

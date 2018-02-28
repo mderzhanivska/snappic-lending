@@ -1,0 +1,40 @@
+footer {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	background-color: $black;
+	color: $white;
+}
+.links {
+	display: flex;
+	&__list {
+		padding-top: 6px;
+		display: flex;
+		li {
+			margin-left: 50px;
+			a {
+				color: $white;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-family: 'Avnir Black', sans-serif;
+				font-weight: 400;
+			}
+		}
+	}
+}
+.rights {
+	padding-top: 40px;
+	.copyright {
+		display: block;
+		color: $white;
+		font-family: 'Avnir Black', sans-serif;
+		font-weight: 400;
+	}
+	.author {
+		padding-top: 20px;
+		display: block;
+		color: $white;
+		font-family: 'Avnir Black', sans-serif;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+}
