@@ -39,23 +39,13 @@
         letter-spacing: 0.8px;
     }
     &__list {
-        position: relative;
-        &:before {
-            position: absolute;
-            content: '';
-            width: 45px;
-            top: 24px;
-            left: 0;
-            height: 45px;
-            border-radius: 50%;
-            background-image: url("../img/circle.png");
-            background-repeat: no-repeat;
-        }
+
     }
 }
 .list {
     padding-top: 33px;
     padding-left: 60px;
+    position: relative;
     &__title {
         color: $orange;
         font-family: 'Avenir Black', sans-serif;
@@ -70,7 +60,19 @@
         font-size: 19px;
         font-weight: 500;
         line-height: 29px;
-        letter-spacing: 0.65px;
+        letter-spacing: .85px;
+    }
+    &__icon {
+        position: absolute;
+        width: 45px;
+        top: 24px;
+        left: 0;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgba(255, 245, 232, 0.7);
+        background-repeat: no-repeat;
+        text-align: center;
+        line-height: 50px;
     }
 }
 

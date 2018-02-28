@@ -1,17 +1,22 @@
 .mobile {
-	padding-top: 130px;	
-	background-image: url("../img/gradient-bg4.png");
-	background-repeat: no-repeat;
-	background-position-x: 130%;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    padding-top: 165px;
+    padding-bottom: 124px;
 }
-.wrap {
+.wrap-mob {
+    background-image: url("../img/gradient-bg4.png");
+    background-repeat: no-repeat;
+    background-position-x: 292%;
 	&__text {
-		padding-top: 130px;
+        padding-top: 269px;
+        padding-left: 130px;
 	}
 	&__img {
-		padding-left: 28px;
+        padding-left: 92px;
+        padding-top: 71px;
 	}
 }
-.description {
-	padding-left: 145px;
+.description-mob {
+    &__desc {
+        letter-spacing: .9px;
+    }
 }

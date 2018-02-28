@@ -1,40 +1,57 @@
 footer {
-	padding-top: 80px;
-	padding-bottom: 50px;
+	padding-top: 58px;
+    padding-bottom: 73px;
 	background-color: $black;
 	color: $white;
 }
 .links {
 	display: flex;
+    &__logo {
+        padding-left: 15px;
+    }
 	&__list {
 		padding-top: 6px;
 		display: flex;
+        padding-left: 60px;
 		li {
-			margin-left: 50px;
+            margin-right: 41px;
 			a {
 				color: $white;
 				text-decoration: none;
-				text-transform: uppercase;
-				font-family: 'Avnir Black', sans-serif;
-				font-weight: 400;
+                text-transform: uppercase;
+                font-family: 'Avnir Black', sans-serif;
+                font-size: 13px;
+                font-weight: 800;
+                line-height: 12px;
+                letter-spacing: 1.5px;
 			}
 		}
 	}
 }
 .rights {
-	padding-top: 40px;
+    padding-top: 25px;
+    padding-left: 15px;
 	.copyright {
 		display: block;
 		color: $white;
 		font-family: 'Avnir Black', sans-serif;
-		font-weight: 400;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 1px;
 	}
 	.author {
 		padding-top: 20px;
 		display: block;
 		color: $white;
 		font-family: 'Avnir Black', sans-serif;
-		font-weight: 400;
 		text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 10px;
+        letter-spacing: 2px;
+        img {
+            margin: 0 20px 0 8px;
+        }
 	}
 }

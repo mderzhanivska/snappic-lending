@@ -2,11 +2,51 @@
     background-image: url("../img/gradient-bg2.png");
     background-repeat: no-repeat;
     padding-top: 138px;
-    .wrap {
+    .wrap{
         &__text {
             padding-left: 40px;
             padding-top: 100px;
         }
+    }
+}
+.wrap-mob {
+    display: flex;
+    &__text {
+
+    }
+    &__img {
+        margin-left: -62px;
+    }
+}
+.description-mob {
+    padding-left: 10px;
+    &__comment {
+        color: $almost-black;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2.45px;
+    }
+    &__title {
+        padding-top: 27px;
+        font-family: 'Adobe Caslon Pro', sans-serif;
+        font-size: 46px;
+        font-weight: 400;
+        line-height: 56px;
+        letter-spacing: -0.69px;
+    }
+    &__desc {
+        padding-top: 24px;
+        color: $almost-black;
+        font-family: 'Avenir Black', sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0.8px;
+    }
+    &__list {
+
     }
 }
 
