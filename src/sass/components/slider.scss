@@ -45,10 +45,13 @@
         right: -25px;
     }
     &:before {
-        content: $slick-prev-character;
-        [dir="rtl"] & {
-            content: $slick-next-character;
-        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-image: url("../img/page1.png");
     }
 }
 
@@ -65,4 +68,19 @@
             content: $slick-prev-character;
         }
     }
+}
+
+.arrow1, .arrow2 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.arrow1 {
+    left: 36px;
+    top: 58%;
+}
+.arrow2 {
+    right: -36px;
+    top: 58%;
 }

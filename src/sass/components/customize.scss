@@ -3,6 +3,7 @@
     padding-top: 249px;
     background-image: url("../img/gradient-bg3.png");
     background-repeat: no-repeat;
+    background-position: -39% 319%;
 }
 .txt {
     padding-left: 100px;
@@ -29,6 +30,14 @@
     position: relative;
 }
 .custom {
+    &.black {
+        .hover__mask {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .radio-custom:checked + .radio-custom-label:before {
+            background-image: url("../img/white-arrow.png");
+        }
+    }
     &__variant {
 
     }
@@ -59,15 +68,20 @@
             box-shadow: 0 0 40px rgba(130, 130, 130, 0.5);
         }
     }
+    &__toggle {
+        display: flex;
+        justify-content: center;
+    }
     &__mask {
         display: block;
         position: absolute;
         width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.7);
+        height: 83%;
+        background-color: rgba(255, 255, 255, 0.5);
         top: 0px;
         left: 0px;
-        text-align: center;
+        text-align: center;   
+        transition: all .3s ease-in-out;
     }
     &__link {
         display: inline-block;
@@ -86,10 +100,7 @@
     }
 
 }
-form {
-    display: flex;
-    justify-content: center;
-}
+
 .border {
     margin-top: 125px;
     font-family: 'Montserrat', sans-serif;
@@ -120,6 +131,12 @@ form {
     left: 24px;
     width: 87%;
     height: 79%;
+}
+.mask-border {
+    height: 87%;
+}
+.mask-bg {
+    height: 85%;
 }
 .bg {
     margin-top: 108px;
@@ -161,10 +178,28 @@ form {
     padding: 2px;
     margin-right: 10px;
     text-align: center;
+    border-radius: 50%;
 }
 
-.radio-custom + .radio-custom-label:before {
-    border-radius: 50%;
+.radio-custom + .radio-custom-label {
+    &:before {
+        content: '';
+        background: #fff;
+        border: 2px solid #ddd;
+        display: inline-block;
+        vertical-align: middle;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        padding: 2px;
+        margin-right: 10px;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    &.black:before {
+        background: #000;
+    }
 }
 
 .radio-custom:checked + .radio-custom-label:before {
