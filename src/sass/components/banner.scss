@@ -36,6 +36,7 @@
         }
     }
     &__btn {
+        position: relative;
         border-radius: 115px;
         border: 1px solid $grey;
         background-color: transparent;
@@ -47,6 +48,27 @@
         margin-top: 34px;
         text-align: center;
         padding: 20px 64px;
+        //&:before {
+        //    content: '';
+        //    position: absolute;
+        //    top: 0;
+        //    left: 0;
+        //    width: 100%;
+        //    height: 100%;
+        //    transform: translateX(-110%) skew(-45deg);
+        //    transition: transform .4s;
+        //    background: $blue;
+        //    border-radius: 115px;
+        //    z-index: -2;
+        //}
+        //&:hover {
+        //    border-color: $blue;
+        //    color: #FFF;
+        //    transition-delay: .0s, .4s;
+        //    &:before {
+        //        transform: translateX(0) skew(0);
+        //    }
+        //}
     }
 }
 
