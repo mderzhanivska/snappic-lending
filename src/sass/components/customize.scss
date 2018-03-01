@@ -33,6 +33,13 @@
     &.black {
         .hover__mask {
             background-color: rgba(0, 0, 0, 0.5);
+            .in {
+                background-image: url("../img/instagram-logo-black-transparent.png");
+            }
+            .link-bg {
+                color: $black;
+                background-color: $white;
+            }
         }
         .hover__link {
             color: white;
@@ -41,6 +48,7 @@
         .radio-custom:checked + .radio-custom-label:before {
             background-image: url("../img/white-arrow.png");
         }
+
     }
     &__variant {
 
@@ -106,6 +114,13 @@
         }
     }
 
+}
+.in {
+    background-image: url("../img/instagram-logo.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
 }
 
 .border {
