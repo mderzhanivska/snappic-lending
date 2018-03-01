@@ -3,7 +3,7 @@
     padding-top: 249px;
     background-image: url("../img/gradient-bg3.png");
     background-repeat: no-repeat;
-    background-position: -39% 319%;
+    background-position: -83% 290%;
 }
 .txt {
     padding-left: 100px;
@@ -69,10 +69,13 @@
 .hover {
     &__img {
         img {
-            box-shadow: 0 0 40px rgba(130, 130, 130, 0.5);
+            box-shadow: 0 0 67px rgba(130, 130, 130, 0.5);
+
         }
     }
     &__toggle {
+        padding-left: 10px;
+        padding-top: 7px;
         display: flex;
         justify-content: center;
     }
@@ -84,7 +87,7 @@
         background-color: rgba(255, 255, 255, 0.5);
         top: 0px;
         left: 0px;
-        text-align: center;   
+        text-align: center;
         transition: all .3s ease-in-out;
     }
     &__link {
@@ -134,10 +137,10 @@
     top: 23px;
     left: 24px;
     width: 87%;
-    height: 79%;
+    height: 77%;
 }
 .mask-border {
-    height: 87%;
+    height: 84%;
 }
 .mask-bg {
     height: 85%;
@@ -164,7 +167,6 @@
 .radio-custom, .radio-custom-label {
     display: inline-block;
     vertical-align: middle;
-    margin: 5px;
     cursor: pointer;
 }
 .radio-custom-label {
@@ -176,11 +178,10 @@
     border: 2px solid #ddd;
     display: inline-block;
     vertical-align: middle;
-    width: 28px;
-    height: 28px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     padding: 2px;
-    margin-right: 10px;
     text-align: center;
     border-radius: 50%;
 }
@@ -192,8 +193,8 @@
         border: 2px solid #ddd;
         display: inline-block;
         vertical-align: middle;
-        width: 28px;
-        height: 28px;
+        width: 34px;
+        height: 34px;
         border-radius: 50%;
         padding: 2px;
         margin-right: 10px;

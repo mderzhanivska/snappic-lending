@@ -13,7 +13,7 @@
         padding-top: 32px;
     }
     &__btn {
-        margin-left: 60px;
+        margin-left: 80px;
         color: $black;
         font-family: 'Avenir Black', sans-serif;
         font-size: 12px;
@@ -100,6 +100,7 @@
     &__col {
         width: 33.3%;
         position: relative;
+        margin-right: 18px;
         &:hover .example1__mask {
             visibility: visible;
             opacity: 1;
@@ -186,6 +187,9 @@
             text-decoration: none;
         }
     }
+}
+.slider {
+    padding-top: 15px;
 }
 
 

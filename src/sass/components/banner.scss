@@ -1,10 +1,12 @@
 .banner {
-    padding-top: 62px;
+    padding-top: 37px;
     padding-bottom: 34px;
     background-image: url("../img/gradient-bg.png");
     background-repeat: no-repeat;
+    background-position: 297% 7%;
 }
 .info {
+    padding-top: 61px;
     display: flex;
     &__img {
         position: relative;

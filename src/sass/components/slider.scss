@@ -38,8 +38,8 @@
 }
 
 .slick-prev {
-    left: 36px;
-    top: 58%;
+    left: 31px;
+    top: 50%;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -56,8 +56,8 @@
 }
 
 .slick-next {
-    right: -36px;
-    top: 58%;
+    right: -31px;
+    top: 50%;
     [dir="rtl"] & {
         left: -25px;
         right: auto;
@@ -77,10 +77,10 @@
     height: 30px;
 }
 .arrow1 {
-    left: 36px;
-    top: 58%;
+    left: 31px;
+    top: 50%;
 }
 .arrow2 {
-    right: -36px;
-    top: 58%;
+    right: -43px;
+    top: 50%;
 }

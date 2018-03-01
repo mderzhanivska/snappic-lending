@@ -1,6 +1,7 @@
 .shop {
     background-image: url("../img/gradient-bg2.png");
     background-repeat: no-repeat;
+    background-position: 311% -288%;
     padding-top: 138px;
     .wrap{
         &__text {
@@ -29,7 +30,7 @@
         font-size: 14px;
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 2.45px;
+        letter-spacing: 1.2px;
     }
     &__title {
         padding-top: 27px;
