@@ -54,23 +54,22 @@
         transition: 0.4s ease;
         z-index: 1;
         &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border-radius: 115px;
             background: $blue;
             transition: 0.3s ease;
             content: '';
-            position: absolute;
             z-index: -1;
-        }
-        &:before {
-            top: 0;
-            right: 100%;
-            bottom: 0;
-            left: 0;
+            transform: translateX(-110%) skew(-45deg);
         }
         &:hover {
             color: $white;
             &:before {
-                right: 0;
+                transform: translateX(0) skew(0);
             }
         }
     }
