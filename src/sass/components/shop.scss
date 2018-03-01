@@ -7,9 +7,24 @@
         &__text {
             padding-left: 40px;
             padding-top: 100px;
+            @media #{$desktop} {
+                padding-left: 0;
+                padding-top: 50px;
+            }
+            .description__desc {
+                padding-right: 114px;
+            }
+            .list__desc {
+                padding-right: 13px;
+            }
         }
         &__img {
             margin-left: -62px;
+            img {
+                @media #{$desktop} {
+                    width: 100%;
+                }
+            }
         }
     }
 }

@@ -11,6 +11,14 @@
     &__img {
         position: relative;
         padding-left: 86px;
+        @media #{$desktop} {
+            padding-left: 0;
+        }
+        img {
+            @media #{$desktop} {
+                width: 100%;
+            }
+        }
         &:before {
             position: absolute;
             content: '';
@@ -19,12 +27,21 @@
             background-image: url("../img/approved-ig-logo.png");
             top: 77px;
             left: 47px;
+            @media #{$desktop} {
+                width: 86px;
+                height: 86px;
+                top: 61px;
+                left: -14px;
+            }
         }
     }
 }
 .text {
     padding-top: 116px;
     padding-left: 11px;
+    @media #{$desktop} {
+        width: 60%;
+    }
     &__title {
         font-family: 'Adobe Caslon Pro', sans-serif;
         font-size: 46px;

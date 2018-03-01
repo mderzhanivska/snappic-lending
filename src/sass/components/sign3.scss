@@ -11,5 +11,8 @@
     	background-image: url("../img/stamp.png");
         bottom: 18px;
         right: 195px;
+        @media #{$desktop} {
+            right: 52px;
+        }
     }
 }

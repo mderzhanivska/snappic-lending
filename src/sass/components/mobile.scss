@@ -1,22 +1,57 @@
 .mobile {
     padding-top: 165px;
     padding-bottom: 124px;
+    @media #{$desktop} {
+        padding-top: 64px;
+        padding-bottom: 0;
+    }
 }
 .wrap-mob {
     background-image: url("../img/gradient-bg4.png");
     background-repeat: no-repeat;
     background-position-x: 292%;
+    @media #{$desktop} {
+        background-position-x: 0;
+        padding-bottom: 140px;
+    }
 	&__text {
         padding-top: 269px;
         padding-left: 130px;
+        @media #{$desktop} {
+            padding-top: 0;
+            width: 50%;
+        }
 	}
 	&__img {
         padding-left: 92px;
         padding-top: 71px;
+        @media #{$desktop} {
+            padding-top: 0;
+            width: 50%;
+        }
+        img {
+            @media #{$desktop} {
+                width: 100%;
+            }
+        }
 	}
 }
 .description-mob {
+    &__comment {
+        @media #{$desktop} {
+            font-size: 12px;
+        }
+    }
+    &__title {
+        @media #{$desktop} {
+            font-size: 44px;
+        }
+    }
     &__desc {
         letter-spacing: .9px;
+        @media #{$desktop} {
+            font-size: 15px;
+            padding-top: 0;
+        }
     }
 }

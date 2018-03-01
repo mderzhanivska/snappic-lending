@@ -11,6 +11,9 @@
         text-align: center;
         width: 50%;
         padding-top: 32px;
+        @media #{$desktop} {
+            width: 46%;
+        }
     }
     &__btn {
         margin-left: 80px;
@@ -34,6 +37,10 @@
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 2.45px;
+        @media #{$desktop} {
+            font-size: 12px;
+        }
+
     }
     &__title {
         padding-top: 27px;
@@ -42,8 +49,12 @@
         font-weight: 400;
         line-height: 56px;
         letter-spacing: -0.69px;
+        @media #{$desktop} {
+            font-size: 44px;
+        }
     }
     &__desc {
+        padding-right: 23px;
         padding-top: 24px;
         color: $almost-black;
         font-family: 'Avenir Black', sans-serif;
@@ -51,6 +62,10 @@
         font-weight: 500;
         line-height: 29px;
         letter-spacing: 0.8px;
+        @media #{$desktop} {
+            font-size: 15px;
+            padding-top: 10px;
+        }
     }
     &__list {
 
@@ -60,14 +75,22 @@
     padding-top: 33px;
     padding-left: 60px;
     position: relative;
+    @media #{$desktop} {
+        padding-top: 14px;
+    }
     &__title {
         color: $orange;
         font-family: 'Avenir Black', sans-serif;
         font-size: 19px;
         font-weight: 900;
         letter-spacing: -1.15px;
+        @media #{$desktop} {
+            font-size: 17px;
+
+        }
     }
     &__desc {
+        padding-right: 10px;
         padding-top: 9px;
         color: $almost-black;
         font-family: 'Avenir Black', sans-serif;
@@ -75,6 +98,9 @@
         font-weight: 500;
         line-height: 29px;
         letter-spacing: .85px;
+        @media #{$desktop} {
+            font-size: 15px;
+        }
     }
     &__icon {
         position: absolute;
@@ -87,6 +113,9 @@
         background-repeat: no-repeat;
         text-align: center;
         line-height: 50px;
+        @media #{$desktop} {
+            top: 5px;
+        }
     }
 }
 

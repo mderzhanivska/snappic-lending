@@ -3,9 +3,17 @@ header {
     position: relative;
     z-index: 20;
 }
+.container {
+    @media #{$desktop} {
+        padding: 0 20px;
+    }
+}
 .header-container {
     display: flex;
     justify-content: space-between;
+    @media #{$desktop} {
+        padding: 0 20px;
+    }
 }
 .logo {
     padding-top: 17px;

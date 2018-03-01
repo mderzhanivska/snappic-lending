@@ -4,6 +4,11 @@
     background-image: url("../img/gradient-bg3.png");
     background-repeat: no-repeat;
     background-position: -83% 290%;
+    @media #{$desktop} {
+        padding-bottom: 765px;
+        padding-top: 172px;
+    }
+
 }
 .txt {
     padding-left: 100px;
@@ -57,21 +62,39 @@
         position: absolute;
         top: 49px;
         left: -65px;
+        @media #{$desktop} {
+            top: 49px;
+            left: 42px;
+        }
     }
     .stl {
         position: absolute;
         top: -125px;
         left: 593px;
+        @media #{$desktop} {
+            top: -75px;
+            left: 519px;
+        }
     }
     .stl-black-border {
         position: absolute;
         top: 155px;
         left: 250px;
+        @media #{$desktop} {
+            top: 354px;
+            left: 143px;
+        }
     }
     .stl-black-bg {
         position: absolute;
         top: 95px;
         right: -65px;
+        @media #{$desktop} {
+            top: 415px;
+            right: 100px;
+        }
+
+
     }
 }
 .hover {
