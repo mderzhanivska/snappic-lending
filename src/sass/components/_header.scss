@@ -65,16 +65,20 @@ header {
         text-decoration: none;
         margin-right: 7px;
         padding-bottom: 2px;
-        &:after {
+       &:after {
             display: block;
             content: '';
-            border-bottom: 2px solid $black;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            background-color: $black;
             transform: scaleX(0);
-            transition: transform .1s ease-in-out;
+            transition: transform .3s ease-in-out;
             transform-origin: 0 50%;
         }
         &:hover {
             &:after {
+                width: 100%;
                 transform: scaleX(1);
             }
         }

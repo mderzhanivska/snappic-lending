@@ -1,25 +1,32 @@
 ---
-title:
+title: 
+
+signs: [
+	'Powerful, simple and beautiful.',
+	'Customize your galleries today - it’s free (forever).',
+	'Snappic is free to use for as long as you want'
+]
+
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 
 	{# variable example #}
-	<h1>{{title}}</h1>
 
+	{% import "partials/_sign.html" as sign %}
 
 	{# partial example #}
 	{% include "partials/_banner.html" %}
 	{% include "partials/_brands-minimized.html" %}
 	{% include "partials/_galleries.html" %}
-	{% include "partials/_sign.html" %}
+	{{sign.active(signs[0])}}
 	{% include "partials/_shop.html" %}
 	{% include "partials/_customize.html" %}
-	{% include "partials/_sign2.html" %}
+	{{sign.active(signs[1])}}
 	{% include "partials/_mobile.html" %}
 	{% include "partials/_brands.html" %}
-	{% include "partials/_sign3.html" %}
+	{{sign.active(signs[2], 'white')}}
 	{% include "partials/_footer.html" %}
 
 

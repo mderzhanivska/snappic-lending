@@ -70,18 +70,26 @@
     }
 }
 
-.arrow1, .arrow2 {
+.arrow-prev, 
+.arrow-next {
     position: absolute;
     display: inline-block;
     width: 30px;
     height: 30px;
 }
-.arrow1 {
-    left: 31px;
+.arrow-prev {
+    left: -48px;
     top: 50%;
 }
-.arrow2 {
-    right: -43px;
+.arrow-next {
+    right: -49px;
     top: 50%;
 }
 
+.slick-track {
+    display: flex;
+}
+
+.slick-slide {
+    align-self: center;
+}

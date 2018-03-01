@@ -86,6 +86,28 @@
         }
         div {
             margin-left: 20px;
+            &:nth-child(odd) {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+.white {
+    background-color: $white;
+    padding-bottom: 109px;
+    &:after {
+        display: none;
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        width: 130px;
+        height: 126px;
+        background-image: url("../img/stamp.png");
+        bottom: 18px;
+        right: 195px;
+        @media #{$desktop} {
+            right: 52px;
         }
     }
 }

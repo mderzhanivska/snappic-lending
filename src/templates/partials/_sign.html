@@ -1,15 +1,19 @@
-<section class="sign">
+{% macro active(title, className) %}
+
+<section class="sign{% if className %} {{className}}{% endif %}">
   <div class="container">
     <div class="sign-up">
-      <h2 class="sign-up__title">Powerful, simple and beautiful.</h2>
+      <h2 class="sign-up__title">{{title}}</h2>
       <span class="sign-up__comment">free forever. set up in minutes. no credit card required</span>
       <button class="sign-up__btn">Sign Up with Instagram </button>
       <div class="sign-up__available">
         <span>Available for </span>
-        <div><img src="img/group.png" alt=""></div>
-        <div><img src="img/group2.png" alt=""></div>
-        <div><img src="img/group3.png" alt=""></div>
+        <div class="sing-up__cms-icon"><img src="img/group.png" alt=""></div>
+        <div class="sing-up__cms-icon"><img src="img/group2.png" alt=""></div>
+        <div class="sing-up__cms-icon"><img src="img/group3.png" alt=""></div>
       </div>
     </div>
   </div>
 </section>
+
+{% endmacro %}

@@ -10,28 +10,13 @@
     display: flex;
     &__img {
         position: relative;
-        padding-left: 86px;
+        padding-left: 46px;
         @media #{$desktop} {
             padding-left: 0;
         }
         img {
             @media #{$desktop} {
                 width: 100%;
-            }
-        }
-        &:before {
-            position: absolute;
-            content: '';
-            width: 86px;
-            height: 86px;
-            background-image: url("../img/approved-ig-logo.png");
-            top: 77px;
-            left: 47px;
-            @media #{$desktop} {
-                width: 86px;
-                height: 86px;
-                top: 61px;
-                left: -14px;
             }
         }
     }
