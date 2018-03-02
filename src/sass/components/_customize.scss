@@ -11,13 +11,16 @@
     @media #{$tablet} {
         padding-top: 70px;
         padding-bottom: 900px;
+        display: none;
     }
     @media #{$phone} {
         padding-top: 70px;
         padding-bottom: 850px;
+        display: none;
     }
     @media #{$mobile} {
         padding-bottom: 1230px;
+        display: none;
     }
 
 }
