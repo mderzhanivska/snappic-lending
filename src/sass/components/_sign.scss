@@ -34,18 +34,18 @@
         padding-top: 17px;
         display: block;
         color: $grey;
-        font-family: 'Avenir Black', sans-serif;
+        font-family: 'Avenir Heavy', sans-serif;
         font-size: 12px;
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 0.2px;
+        letter-spacing: 1.3px;
         @media #{$desktop} {
             font-size: 12px;
         }
     }
     &__btn {
         position: relative;
-        margin-top: 30px;
+        margin-top: 28px;
         border-radius: 29px;
         background-color: $pink;
         color: $white;
@@ -53,7 +53,7 @@
         font-size: 13px;
         font-weight: 700;
         letter-spacing: 0.59px;
-        padding: 20px 56px 20px 103px;
+        padding: 21px 65px 21px 94px;
         @media #{$desktop} {
             font-size: 12px;
         }
@@ -75,7 +75,7 @@
         justify-content: center;
         span {
             color: #787575;
-            font-family: 'Avenir Black', sans-serif;
+            font-family: 'Avenir Medium', sans-serif;
             font-size: 19px;
             font-weight: 500;
             line-height: 29px;
@@ -93,6 +93,7 @@
     }
 }
 .white {
+    padding-top: 116px;
     background-color: $white;
     padding-bottom: 109px;
     &:after {

@@ -14,11 +14,11 @@
     padding-left: 100px;
     &__comment {
         color: $almost-black;
-        font-family: 'Avenir Black', sans-serif;
+        font-family: 'Avenir Heavy', sans-serif;
         font-size: 14px;
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1.45px;
+        letter-spacing: 2.45px;
     }
     &__title {
         padding-top: 26px;
@@ -164,7 +164,7 @@
 }
 .bold {
     margin-top: 166px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Bold', sans-serif;
     font-size: 15px;
     font-weight: 900;
     line-height: 16px;
@@ -192,7 +192,7 @@
     font-size: 10px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.51px;
+    letter-spacing: 0.45px;
     background-color: $black;
     padding: 18px 15px;
     color: $white;

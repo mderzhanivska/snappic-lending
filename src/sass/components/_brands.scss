@@ -1,16 +1,23 @@
 .brands {
-	padding-top: 100px;
-	border: 20px solid $light-grey;
+	padding-top: 20px;
+    padding-bottom: 20px;
+	//border: 20px solid $border;
+    background-image: linear-gradient(78deg, rgba(166, 188, 240, 0.6) 0%, rgba(194, 212, 253, 0.6) 20%, rgba(255, 255, 255, 0.6) 100%);
 	text-align: center;
 }
 .information {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: $white;
 	&__comment {
         color: $almost-black;
-        font-family: 'Avenir Black', sans-serif;
+        font-family: 'Avenir Heavy', sans-serif;
         font-size: 14px;
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1.45px;
+        letter-spacing: 2.45px;
         @media #{$desktop} {
             font-size: 12px;
         }
@@ -37,7 +44,7 @@
 
     }
     .brand-img {
-        padding: 78px 135px;
+        padding: 53px 230px;
         @media #{$desktop} {
             padding: 78px 30px;
         }

@@ -12,10 +12,10 @@
                 padding-top: 50px;
             }
             .description__desc {
-                padding-right: 114px;
+                padding-right: 122px;
             }
             .list__desc {
-                padding-right: 13px;
+                padding-right: 25px;
             }
         }
         &__img {
@@ -41,11 +41,11 @@
     padding-left: 10px;
     &__comment {
         color: $almost-black;
-        font-family: 'Avenir Black', sans-serif;
+        font-family: 'Avenir Heavy', sans-serif;
         font-size: 14px;
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1.2px;
+        letter-spacing: 2.45px;
     }
     &__title {
         padding-top: 27px;
@@ -58,11 +58,11 @@
     &__desc {
         padding-top: 24px;
         color: $almost-black;
-        font-family: 'Avenir Black', sans-serif;
+        font-family: 'Avenir Medium', sans-serif;
         font-size: 19px;
         font-weight: 500;
         line-height: 29px;
-        letter-spacing: 0.8px;
+        letter-spacing: 0.65px;
     }
     &__list {
 

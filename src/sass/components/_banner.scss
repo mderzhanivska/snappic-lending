@@ -1,12 +1,12 @@
 .banner {
-    padding-top: 37px;
-    padding-bottom: 34px;
+    padding-top: 38px;
+    padding-bottom: 26px;
     background-image: url("../img/gradient-bg.png");
     background-repeat: no-repeat;
     background-position: 297% 7%;
 }
 .info {
-    padding-top: 61px;
+    padding-top: 55px;
     display: flex;
     &__img {
         position: relative;
@@ -22,7 +22,7 @@
     }
 }
 .text {
-    padding-top: 116px;
+    padding-top: 121px;
     padding-left: 11px;
     @media #{$desktop} {
         width: 60%;
@@ -45,13 +45,12 @@
         font-size: 12px;
         font-family: 'Avenir Black', sans-serif;
         font-weight: 900;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.59px;
         color: $black;
         margin-top: 34px;
         text-align: center;
         padding: 20px 64px;
         overflow: hidden;
-        transition: 0.4s ease;
         z-index: 1;
         &:before {
             position: absolute;
