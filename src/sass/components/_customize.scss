@@ -86,6 +86,10 @@
             top: 45px;
             left: 69px;
         }
+        @media #{$phone} {
+            top: 357px;
+            left: 0;
+        }
     }
     .stl {
         position: absolute;
@@ -103,9 +107,16 @@
             top: 357px;
             left: 12px;
         }
+        @media #{$phone} {
+            top: 357px;
+            left: 0;
+        }
         img {
             @media #{$phone} {
                 width: 350px;
+            }
+            @media #{$mobile} {
+                width: 250px;
             }
         }
     }
@@ -125,6 +136,10 @@
             top: 792px;
             left: 42px;
         }
+        @media #{$phone} {
+            top: 357px;
+            left: 0;
+        }
     }
     .stl-black-bg {
         position: absolute;
@@ -137,6 +152,10 @@
         @media #{$phone} {
             top: 1172px;
             right: 55px;
+        }
+        @media #{$phone} {
+            top: 357px;
+            left: 0;
         }
 
 

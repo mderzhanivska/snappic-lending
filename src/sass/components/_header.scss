@@ -14,12 +14,18 @@ header {
     @media #{$desktop} {
         padding: 0 20px;
     }
+    @media #{$mobile} {
+        padding: 0 10px;
+    }
 }
 .logo {
     padding-top: 17px;
     img {
         @media #{$phone} {
             width: 100%;
+        }
+        @media #{$mobile} {
+            width: 75%;
         }
     }
 }
@@ -51,6 +57,10 @@ header {
             margin-right: 10px;
             font-size: 9px;
             padding: 14px 10px;
+        }
+        @media #{$mobile} {
+            font-size: 8px;
+            padding: 14px 5px;
         }
         &:before {
             background: $blue;

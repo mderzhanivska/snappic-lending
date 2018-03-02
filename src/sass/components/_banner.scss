@@ -83,6 +83,9 @@
         @media #{$phone} {
             margin-top: 40px;
         }
+        @media #{$phone} {
+            margin-top: 33px;
+        }
         &:before {
             position: absolute;
             top: 0;
