@@ -12,6 +12,10 @@ footer {
 	display: flex;
     &__logo {
         padding-left: 15px;
+        @media #{$mobile} {
+            padding-top: 25px;
+        }
+
     }
 	&__list {
 		padding-top: 4px;
@@ -24,6 +28,10 @@ footer {
             flex-wrap: wrap;
             padding-top: 0;
             align-items: center;
+        }
+        @media #{$mobile} {
+            justify-content: center;
+            padding-left: 26px;
         }
 		li {
             margin-right: 41px;
@@ -63,6 +71,9 @@ footer {
 .rights {
     padding-top: 25px;
     padding-left: 15px;
+    @media #{$mobile} {
+        text-align: center;
+    }
 	.copyright {
 		display: block;
 		color: $white;
@@ -82,6 +93,9 @@ footer {
         font-weight: 800;
         line-height: 10px;
         letter-spacing: 2px;
+        @media #{$mobile} {
+            line-height: 20px;
+        }
         img {
             margin: 0 20px 0 8px;
         }

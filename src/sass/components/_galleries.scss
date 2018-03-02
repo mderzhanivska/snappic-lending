@@ -33,7 +33,7 @@
             width: 90%;
             padding-top: 30px;
         }
-        @media #{$tablet} {
+        @media #{$phone} {
             width: 90%;
             padding-top: 30px;
             padding-left: 45px;
@@ -49,6 +49,9 @@
         border-radius: 21px;
         background-color: $light-grey;
         padding: 14px 29px;
+        @media #{$mobile} {
+            font-size: 10px;
+        }
     }
 }
 .description {
@@ -91,6 +94,9 @@
             font-size: 15px;
             padding-top: 10px;
         }
+        @media #{$mobile} {
+            padding-right: 0;
+        }
     }
     &__list {
 
@@ -106,6 +112,9 @@
     @media #{$tablet} {
         padding-top: 20px;
     }
+    @media #{$mobile} {
+        padding-left: 0;
+    }
     &__title {
         color: $orange;
         font-family: 'Avenir Black', sans-serif;
@@ -115,6 +124,10 @@
         @media #{$desktop} {
             font-size: 17px;
         }
+        @media #{$mobile} {
+            padding-left: 56px;
+        }
+
     }
     &__desc {
         padding-right: 21px;
@@ -127,6 +140,9 @@
         letter-spacing: .65px;
         @media #{$desktop} {
             font-size: 15px;
+        }
+        @media #{$mobile} {
+            padding-right: 0;
         }
     }
     &__icon {
@@ -175,6 +191,9 @@
         &:hover .example1__mask {
             visibility: visible;
             opacity: 1;
+            @media #{$mobile} {
+                visibility: hidden;
+            }
         }
         img {
             @media #{$desktop} {
@@ -205,6 +224,12 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         text-decoration: none;
+        @media #{$desktop} {
+            margin-top: 50px;
+        }
+        @media #{$tablet} {
+            margin-top: 70px;
+        }
         &:hover {
             text-decoration: underline;
         }
@@ -235,9 +260,18 @@
         &:hover .photos__mask {
             visibility: visible;
             opacity: 1;
+            @media #{$mobile} {
+                visibility: hidden;
+            }
         }
         &.single {
             width: 100%;
+            .photos__link {
+                @media #{$desktop} {
+                    font-size: 8px;
+                }
+            }
+
         }
         img {
             height: 100%;
@@ -269,6 +303,9 @@
         text-decoration: none;
         font-weight: 400;
         letter-spacing: 0.32px;
+        @media #{$desktop} {
+            font-size: 5px;
+        }
         &:hover {
             text-decoration: none;
         }

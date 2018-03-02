@@ -31,9 +31,16 @@
             }
             .description__desc {
                 padding-right: 122px;
+                @media #{$mobile} {
+                    padding-right: 10px;
+                }
             }
             .list__desc {
                 padding-right: 31px;
+                @media #{$mobile} {
+                    padding-right: 10px;
+                    padding-top: 18px;
+                }
             }
         }
         &__img {

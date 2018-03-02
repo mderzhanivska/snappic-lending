@@ -69,11 +69,17 @@
 		&__col {
 			width: 20%;
             padding-bottom: 36px;
+            &:last-child {
+                padding-bottom: 0;
+            }
             @media #{$tablet} {
                 width: 20%;
             }
             @media #{$phone} {
                 width: 50%;
+            }
+            @media #{$phone} {
+                width: 100%;
             }
 		}
     }

@@ -14,7 +14,10 @@
     }
     @media #{$phone} {
         padding-top: 70px;
-        padding-bottom: 1500px;
+        padding-bottom: 850px;
+    }
+    @media #{$mobile} {
+        padding-bottom: 1230px;
     }
 
 }
@@ -79,16 +82,16 @@
             left: 42px;
         }
         @media #{$tablet} {
-            top: 105px;
+            top: 42px;
             left: 42px;
         }
-        @media #{$tablet} {
-            top: 45px;
-            left: 69px;
-        }
         @media #{$phone} {
-            top: 357px;
-            left: 0;
+            top: 42px;
+            left: 42px;
+        }
+        @media #{$mobile} {
+            top: 30px;
+            left: 30px;
         }
     }
     .stl {
@@ -101,23 +104,15 @@
         }
         @media #{$tablet} {
             top: 41px;
-            left: 304px;
+            left: 423px;
         }
         @media #{$phone} {
-            top: 357px;
-            left: 12px;
+            top: 41px;
+            left: 370px;
         }
-        @media #{$phone} {
-            top: 357px;
-            left: 0;
-        }
-        img {
-            @media #{$phone} {
-                width: 350px;
-            }
-            @media #{$mobile} {
-                width: 250px;
-            }
+        @media #{$mobile} {
+            top: 315px;
+            left: 30px;
         }
     }
     .stl-black-border {
@@ -129,16 +124,16 @@
             left: 143px;
         }
         @media #{$tablet} {
-            top: 479px;
-            left: 90px;
-        }
-        @media #{$phone} {
-            top: 792px;
+            top: 470px;
             left: 42px;
         }
         @media #{$phone} {
-            top: 357px;
-            left: 0;
+            top: 470px;
+            left: 42px;
+        }
+        @media #{$mobile} {
+            top: 615px;
+            left: 30px;
         }
     }
     .stl-black-bg {
@@ -146,20 +141,21 @@
         top: 95px;
         right: -65px;
         @media #{$desktop} {
-            top: 554px;
+            top: 420px;
             right: 22px;
         }
-        @media #{$phone} {
-            top: 1172px;
-            right: 55px;
+        @media #{$tablet} {
+            top: 470px;
+            left: 423px;
         }
         @media #{$phone} {
-            top: 357px;
-            left: 0;
+            top: 470px;
+            left: 370px;
         }
-
-
-
+        @media #{$mobile} {
+            top: 909px;
+            left: 30px;
+        }
     }
 }
 .hover {
@@ -167,7 +163,15 @@
         img {
             box-shadow: 0 0 67px rgba(130, 130, 130, 0.5);
             border-radius: 4px;
-
+            @media #{$tablet} {
+                width: 300px;
+            }
+            @media #{$tablet} {
+                width: 250px;
+            }
+            @media #{$mobile} {
+                width: 200px;
+            }
         }
     }
     &__toggle {
@@ -181,12 +185,13 @@
         position: absolute;
         border-radius: 4px;
         width: 100%;
-        height: 82.3%;
+        height: 82.6%;
         background-color: rgba(255, 255, 255, 0.5);
         top: 0px;
         left: 0px;
         text-align: center;
         transition: all .3s ease-in-out;
+
     }
     &__link {
         display: inline-block;
@@ -245,7 +250,7 @@
     height: 77%;
 }
 .mask-border {
-    height: 84%;
+    height: 83.9%;
 }
 .mask-bg {
     height: 83.9%;
