@@ -1,3 +1,5 @@
+@import '_variables';
+
 body {
   background: #FFF;
   line-height: 1.4;
@@ -6,6 +8,69 @@ body {
   width: 100%;
   max-width: 1220px;
   margin: 0 auto;
+}
+.title {
+    font-size: 46px;
+    @media #{$desktop} {
+        font-size: 44px;
+    }
+    @media #{$tablet} {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    @media #{$phone} {
+        font-size: 35px;
+    }
+    @media #{$mobile} {
+        font-size: 35px;
+    }
+}
+.comment {
+    font-size: 46px;
+    @media #{$desktop} {
+        font-size: 14px;
+    }
+    @media #{$tablet} {
+        font-size: 11px;
+    }
+    @media #{$phone} {
+        font-size: 12px;
+    }
+    @media #{$mobile} {
+        font-size: 9px;
+    }
+}
+.list-title {
+    font-size: 19px;
+    @media #{$desktop} {
+        font-size: 17px;
+    }
+    @media #{$tablet} {
+        font-size: 14px;
+    }
+    @media #{$phone} {
+        font-size: 12px;
+    }
+    @media #{$mobile} {
+        font-size: 12px;
+    }
+}
+.desc {
+    font-size: 19px;
+    line-height: 29px;
+    @media #{$desktop} {
+        font-size: 17px;
+    }
+    @media #{$tablet} {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    @media #{$phone} {
+        font-size: 12px;
+    }
+    @media #{$mobile} {
+        font-size: 12px;
+    }
 }
 
 

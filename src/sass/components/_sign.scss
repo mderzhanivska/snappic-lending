@@ -3,6 +3,10 @@
     padding-top: 82px;
     padding-bottom: 53px;
     position: relative;
+    @media #{$tablet} {
+        padding-top: 49px;
+        padding-bottom: 37px;
+    }
     &:before {
         position: absolute;
         content: '';
@@ -14,6 +18,14 @@
         @media #{$desktop} {
             bottom: -36px;
             right: 43px;
+        }
+        @media #{$phone} {
+            width: 80px;
+            height: 60px;
+            background-size: 80%;
+            background-repeat: no-repeat;
+            bottom: -18px;
+            right: 0;
         }
     }
 }
@@ -57,6 +69,9 @@
         @media #{$desktop} {
             font-size: 12px;
         }
+        @media #{$tablet} {
+            padding: 17px 42px 17px 81px;
+        }
         &:before {
             position: absolute;
             content: '';
@@ -66,6 +81,10 @@
             height: 30px;
             background-image: url("../img/instagram-logo-black-transparent.png");
             background-repeat: no-repeat;
+            @media #{$tablet} {
+                top: 13px;
+                left: 45px;
+            }
         }
 
     }
@@ -96,6 +115,9 @@
     padding-top: 116px;
     background-color: $white;
     padding-bottom: 109px;
+    @media #{$tablet} {
+        padding-bottom: 93px;
+    }
     &:after {
         display: none;
     }
@@ -109,6 +131,9 @@
         right: 195px;
         @media #{$desktop} {
             right: 52px;
+        }
+        @media #{$tablet} {
+            bottom: 17px;
         }
     }
 }

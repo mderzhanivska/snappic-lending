@@ -1,11 +1,23 @@
 .galleries {
     padding-top: 131px;
     padding-bottom: 142px;
+    @media #{$tablet} {
+        padding-top: 35px;
+    }
+    @media #{$phone} {
+        padding-bottom: 70px;
+    }
 }
 .wrap {
     display: flex;
+    @media #{$tablet} {
+        flex-direction: column;
+    }
     &__text {
         width: 50%;
+        @media #{$tablet} {
+            width: 100%;
+        }
     }
     &__examples {
         text-align: center;
@@ -15,6 +27,16 @@
         padding-right: 5px;
         @media #{$desktop} {
             width: 46%;
+            padding-top: 120px;
+        }
+        @media #{$tablet} {
+            width: 90%;
+            padding-top: 30px;
+        }
+        @media #{$tablet} {
+            width: 90%;
+            padding-top: 30px;
+            padding-left: 45px;
         }
     }
     &__btn {
@@ -41,7 +63,6 @@
         @media #{$desktop} {
             font-size: 12px;
         }
-
     }
     &__title {
         padding-top: 27px;
@@ -52,6 +73,9 @@
         letter-spacing: -0.69px;
         @media #{$desktop} {
             font-size: 44px;
+        }
+        @media #{$tablet} {
+            padding-top: 17px;
         }
     }
     &__desc {
@@ -79,6 +103,9 @@
     @media #{$desktop} {
         padding-top: 14px;
     }
+    @media #{$tablet} {
+        padding-top: 20px;
+    }
     &__title {
         color: $orange;
         font-family: 'Avenir Black', sans-serif;
@@ -87,7 +114,6 @@
         letter-spacing: 0.35px;
         @media #{$desktop} {
             font-size: 17px;
-
         }
     }
     &__desc {
@@ -117,12 +143,20 @@
         @media #{$desktop} {
             top: 5px;
         }
+        @media #{$tablet} {
+            top: 9px;
+        }
     }
 }
 
 .example1 {
-     @media #{$desktop} {
-        padding-top: 100px;
+    @media #{$tablet} {
+        margin: 0 auto;
+        width: 80%;
+    }
+    @media #{$tablet} {
+        margin: 0 auto;
+        width: 100%;
     }
     &__row {
         display: flex;

@@ -3,7 +3,17 @@
     background-repeat: no-repeat;
     background-position: 311% -288%;
     padding-top: 138px;
+    @media #{$tablet} {
+        padding-top: 44px;
+    }
     .wrap{
+        @media #{$tablet} {
+            display: flex;
+            flex-direction: row;
+        }
+        @media #{$phone} {
+            flex-direction: column;
+        }
         &__text {
             padding-left: 40px;
             padding-top: 100px;
@@ -11,18 +21,35 @@
                 padding-left: 0;
                 padding-top: 50px;
             }
+            @media #{$tablet} {
+                width: 50%;
+                padding-left: 28px;
+            }
+            @media #{$phone} {
+                width: 100%;
+                padding-top: 40px;
+            }
             .description__desc {
                 padding-right: 122px;
             }
             .list__desc {
-                padding-right: 25px;
+                padding-right: 31px;
             }
         }
         &__img {
             margin-left: -62px;
+            @media #{$tablet} {
+                width: 50%;
+            }
+            @media #{$phone} {
+                width: 100%;
+            }
             img {
                 @media #{$desktop} {
                     width: 100%;
+                }
+                @media #{$phone} {
+                    width: 120%;
                 }
             }
         }

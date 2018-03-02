@@ -8,10 +8,21 @@
         padding-bottom: 765px;
         padding-top: 172px;
     }
+    @media #{$tablet} {
+        padding-top: 70px;
+        padding-bottom: 900px;
+    }
+    @media #{$phone} {
+        padding-top: 70px;
+        padding-bottom: 1500px;
+    }
 
 }
 .txt {
     padding-left: 100px;
+    @media #{$phone} {
+        padding-left: 0;
+    }
     &__comment {
         color: $almost-black;
         font-family: 'Avenir Heavy', sans-serif;
@@ -67,6 +78,14 @@
             top: 49px;
             left: 42px;
         }
+        @media #{$tablet} {
+            top: 105px;
+            left: 42px;
+        }
+        @media #{$tablet} {
+            top: 45px;
+            left: 69px;
+        }
     }
     .stl {
         position: absolute;
@@ -75,6 +94,19 @@
         @media #{$desktop} {
             top: -75px;
             left: 519px;
+        }
+        @media #{$tablet} {
+            top: 41px;
+            left: 304px;
+        }
+        @media #{$phone} {
+            top: 357px;
+            left: 12px;
+        }
+        img {
+            @media #{$phone} {
+                width: 350px;
+            }
         }
     }
     .stl-black-border {
@@ -85,15 +117,28 @@
             top: 354px;
             left: 143px;
         }
+        @media #{$tablet} {
+            top: 479px;
+            left: 90px;
+        }
+        @media #{$phone} {
+            top: 792px;
+            left: 42px;
+        }
     }
     .stl-black-bg {
         position: absolute;
         top: 95px;
         right: -65px;
         @media #{$desktop} {
-            top: 415px;
-            right: 100px;
+            top: 554px;
+            right: 22px;
         }
+        @media #{$phone} {
+            top: 1172px;
+            right: 55px;
+        }
+
 
 
     }

@@ -8,14 +8,32 @@
 .info {
     padding-top: 55px;
     display: flex;
+    @media #{$phone} {
+        flex-direction: column;
+    }
+    &__txt {
+        @media #{$phone} {
+            order: 2;
+            width: 100%;
+        }
+    }
     &__img {
         position: relative;
         padding-left: 46px;
         @media #{$desktop} {
             padding-left: 0;
         }
+        @media #{$phone} {
+            order: 1;
+        }
         img {
             @media #{$desktop} {
+                width: 100%;
+            }
+            @media #{$tablet} {
+                width: 90%;
+            }
+            @media #{$phone} {
                 width: 100%;
             }
         }
@@ -26,6 +44,12 @@
     padding-left: 11px;
     @media #{$desktop} {
         width: 60%;
+    }
+    @media #{$tablet} {
+        padding-top: 10px;
+    }
+    @media #{$phone} {
+        text-align: center;
     }
     &__title {
         font-family: 'Adobe Caslon Pro', sans-serif;
@@ -52,6 +76,13 @@
         padding: 20px 64px;
         overflow: hidden;
         z-index: 1;
+        @media #{$tablet} {
+            padding: 14px 53px;
+            margin-top: 50px;
+        }
+        @media #{$phone} {
+            margin-top: 40px;
+        }
         &:before {
             position: absolute;
             top: 0;

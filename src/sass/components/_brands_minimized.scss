@@ -8,4 +8,36 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 44px;
+    @media #{$desktop} {
+        padding: 0 17px;
+    }
+    @media #{$phone} {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div {
+        @media #{$tablet} {
+            padding-right: 20px;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+        @media #{$phone} {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-left: 20px;
+        }
+        img {
+            @media #{$tablet} {
+                width: 80%;
+            }
+            @media #{$phone} {
+                width: auto;
+            }
+        }
+    }
+
 }

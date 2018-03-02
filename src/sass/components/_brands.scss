@@ -7,10 +7,13 @@
 }
 .information {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 64px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: $white;
+    @media #{$tablet} {
+        padding-top: 60px;
+    }
 	&__comment {
         color: $almost-black;
         font-family: 'Avenir Heavy', sans-serif;
@@ -41,21 +44,37 @@
     	height: 7px;
     	background-color: $light-orange;
     	transform: rotate(-16deg);
-
+        @media #{$tablet} {
+            margin-top: 30px;
+        }
     }
     .brand-img {
         padding: 53px 230px;
         @media #{$desktop} {
             padding: 78px 30px;
         }
+        @media #{$tablet} {
+            padding: 26px 0;
+        }
 		&__row {
 			width: 100%;
-			height: 109px;
 			display: flex;
+            flex-wrap: wrap;
             align-items: center;
+            vertival-align: baseline;
+            @media #{$phone} {
+                flex-wrap: wrap;
+            }
 		}
 		&__col {
 			width: 20%;
+            padding-bottom: 36px;
+            @media #{$tablet} {
+                width: 20%;
+            }
+            @media #{$phone} {
+                width: 50%;
+            }
 		}
     }
 }

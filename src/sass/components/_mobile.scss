@@ -14,12 +14,27 @@
         background-position-x: 0;
         padding-bottom: 140px;
     }
+    @media #{$tablet} {
+        padding-bottom: 55px;
+    }
+    @media #{$phone} {
+        display: flex;
+        flex-direction: column;
+        background-size: 145%;
+    }
 	&__text {
         padding-top: 269px;
         padding-left: 130px;
         @media #{$desktop} {
             padding-top: 0;
             width: 50%;
+        }
+        @media #{$tablet} {
+            padding-left: 20px;
+        }
+        @media #{$phone} {
+            width: 100%;
+            order: 2;
         }
 	}
 	&__img {
@@ -28,6 +43,11 @@
         @media #{$desktop} {
             padding-top: 0;
             width: 50%;
+            order: 1;
+        }
+        @media #{$phone} {
+            width: 100%;
+            margin-left: 0;
         }
         img {
             @media #{$desktop} {
