@@ -109,6 +109,9 @@
         }
         &:hover {
             color: $pink;
+            &:before {
+                background-image: url("../img/instagram-logo.png");
+            }
             &:after {
                 transform: translateX(0) skew(0);
             }
