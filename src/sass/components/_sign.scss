@@ -63,13 +63,12 @@
         margin-top: 28px;
         border-radius: 29px;
         background-color: $pink;
-        border: 1px solid $pink;
         color: $white;
         font-family: 'Avenir Black', sans-serif;
         font-size: 13px;
         font-weight: 700;
         letter-spacing: 0.59px;
-        z-index: 1;
+        z-index: 4;
         padding: 21px 65px 21px 94px;
         @media #{$desktop} {
             font-size: 12px;
@@ -100,7 +99,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 115px;
             background: $light-grey;
             transition: 0.3s ease;
             content: '';
