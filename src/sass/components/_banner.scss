@@ -1,9 +1,22 @@
 .banner {
+    position: relative;
     padding-top: 38px;
     padding-bottom: 26px;
-    background-image: url("../img/gradient-bg.png");
-    background-repeat: no-repeat;
-    background-position: 297% 7%;
+    overflow: hidden;
+}
+.bg-cont {
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 1241px;
+        height: 883px;
+        top: -9%;
+        left: 39.5%;
+        background-image: url("../img/gradient-bg.png");
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
 }
 .info {
     padding-top: 55px;

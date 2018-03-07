@@ -1,9 +1,19 @@
 .customize {
     padding-bottom: 687px;
     padding-top: 249px;
-    background-image: url("../img/gradient-bg3.png");
-    background-repeat: no-repeat;
-    background-position: -83% 290%;
+    position: relative;
+    overflow: hidden;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 1147px;
+        height: 1104px;
+        top: -17.7%;
+        left: -16.5%;
+        background-image: url("../img/gradient-bg3.png");
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    }
     @media #{$desktop} {
         padding-bottom: 765px;
         padding-top: 172px;
@@ -15,9 +25,8 @@
     @media #{$phone} {
         padding-top: 70px;
     }
-    
-
 }
+
 .txt {
     padding-left: 100px;
     @media #{$phone} {
@@ -56,7 +65,7 @@
 }
 .custom {
     @media #{$tablet} {
-        padding-bottom: 40px; 
+        padding-bottom: 40px;
     }
     &.black {
         .hover__mask {
@@ -83,7 +92,7 @@
         @media #{$tablet} {
             width: 100%;
         }
-        
+
 
     }
     .insta {

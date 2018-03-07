@@ -1,13 +1,29 @@
 .mobile {
     padding-top: 165px;
     padding-bottom: 124px;
+    overflow: hidden;
     @media #{$desktop} {
         padding-top: 64px;
         padding-bottom: 0;
     }
 }
+.bg-mob {
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 1241px;
+        height: 883px;
+        top: 16%;
+        left: 37.3%;
+        background-image: url("../img/gradient-bg4.png");
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        z-index: -1;
+    }
+}
 .wrap-mob {
-    background-image: url("../img/gradient-bg4.png");
+    //background-image: url("../img/gradient-bg4.png");
     background-repeat: no-repeat;
     background-position-x: 292%;
     @media #{$desktop} {

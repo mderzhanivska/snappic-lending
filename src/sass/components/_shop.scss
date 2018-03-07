@@ -1,10 +1,23 @@
 .shop {
-    background-image: url("../img/gradient-bg2.png");
-    background-repeat: no-repeat;
-    background-position: 311% -288%;
     padding-top: 138px;
+    overflow: hidden;
     @media #{$tablet} {
         padding-top: 44px;
+    }
+    .bg-wrap {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 1241px;
+            height: 883px;
+            top: 10%;
+            left: 43%;
+            background-image: url("../img/gradient-bg2.png");
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            z-index: -1;
+        }
     }
     .wrap{
         @media #{$tablet} {
@@ -44,6 +57,7 @@
             }
         }
         &__img {
+            width: 63%;
             margin-left: -62px;
             @media #{$tablet} {
                 width: 50%;
@@ -52,6 +66,7 @@
                 width: 100%;
             }
             img {
+                width: 100%;
                 @media #{$desktop} {
                     width: 100%;
                 }
@@ -102,7 +117,7 @@
         letter-spacing: 0.65px;
     }
     &__list {
-        
+
     }
 }
 

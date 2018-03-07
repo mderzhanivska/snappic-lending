@@ -36,10 +36,12 @@ footer {
 		li {
             margin-right: 41px;
 			a {
+                display: block;
+                position: relative;
 				color: $white;
 				text-decoration: none;
                 text-transform: uppercase;
-                font-family: 'Avnir Heavy', sans-serif;
+                font-family: 'Avenir Heavy', sans-serif;
                 font-size: 13px;
                 font-weight: 800;
                 line-height: 12px;
@@ -47,21 +49,23 @@ footer {
                 @media #{$phone} {
                     font-size: 10px;
                 }
-                &:after {
-                    display: block;
+                &:before {
                     content: '';
-                    width: 0;
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0px;
+                    width: 100%;
                     height: 2px;
-                    bottom: 0;
-                    background-color: $white;
-                    transform: scaleX(0);
-                    transition: all .3s ease-in-out;
-                    transform-origin: 0 50%;
+                    background: $white;
+                    display: block;
+                    transform-origin: right top;
+                    transform: scale(0, 1);
+                    transition: transform .3s cubic-bezier(1, 0, 0, 1);
                 }
                 &:hover {
-                    &:after {
-                        width: 100%;
-                        transform: scaleX(1);
+                    &:before {
+                        transform-origin: left top;
+                        transform: scale(1, 1)
                     }
                 }
 			}
@@ -77,7 +81,7 @@ footer {
 	.copyright {
 		display: block;
 		color: $white;
-		font-family: 'Avnir Medium', sans-serif;
+		font-family: 'Avenir Medium', sans-serif;
         font-size: 10px;
         font-weight: 500;
         line-height: 12px;
@@ -87,7 +91,7 @@ footer {
 		padding-top: 20px;
 		display: block;
 		color: $white;
-		font-family: 'Avnir Heavy', sans-serif;
+		font-family: 'Avenir Heavy', sans-serif;
 		text-transform: uppercase;
         font-size: 10px;
         font-weight: 800;
