@@ -109,7 +109,7 @@
             background: $blue;
             transition: 0.3s ease;
             content: '';
-            z-index: 1;
+            z-index: -1;
             transform: translateX(-110%) skew(-45deg);
         }
         &:hover {
