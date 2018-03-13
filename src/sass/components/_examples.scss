@@ -1,4 +1,6 @@
 .examples {
+    padding-top: 60px;
+    padding-bottom: 45px;
     display: none;
 }
 .ex-description {
@@ -12,6 +14,7 @@
         letter-spacing: 2.45px;
     }
     &__title {
+        padding-top: 25px;
         color: #000000;
         font-family: 'Adobe Caslon Pro', sans-serif;
         font-size: 46px;
@@ -21,7 +24,7 @@
     }
 }
 .layout-control {
-    padding-top: 40px;
+    padding-top: 33px;
     width: 30%;
     margin: 0 auto;
     text-align: center;
@@ -36,36 +39,46 @@
         height: 50px;
         background-color: transparent;
         align-self: center;
+        border-bottom: 6px solid transparent;
+        &:hover {
+            background-image: url("../img/layout1-blue.png");
+        }
         &:focus {
             background-image: url("../img/layout1-blue.png");
-            border-bottom: 6px solid $deep-blue;
+            border-color: $deep-blue;
         }
         &:nth-child(2) {
             background-image: url("../img/layout2.png");
+            &:hover {
+                background-image: url("../img/layout2-blue.png");
+            }
             &:focus {
                 background-image: url("../img/layout2-blue.png");
-                border-bottom: 6px solid $deep-blue;
             }
         }
         &:nth-child(3) {
             background-image: url("../img/layout3.png");
+            &:hover {
+                background-image: url("../img/layout3-blue.png");
+            }
             &:focus {
                 background-image: url("../img/layout3-blue.png");
-                border-bottom: 6px solid $deep-blue;
             }
         }
         &:nth-child(4) {
             background-image: url("../img/layout4.png");
+            &:hover {
+                background-image: url("../img/layout4-blue.png");
+            }
             &:focus {
                 background-image: url("../img/layout4-blue.png");
-                border-bottom: 6px solid $deep-blue;
+                border-color: $deep-blue;
             }
         }
     }
 }
 .layout {
-    padding-top: 50px;
-    overflow: hidden;
+    padding-top: 60px;
     .img {
         width: 20%;
         img {
@@ -73,12 +86,39 @@
             height: 100%;
         }
     }
+
 }
 .layout-1 {
     display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 330px;
+
+    .img {
+        width: 20%;
+        &:nth-child(3) {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 .layout-2 {
+    display: flex;
     flex-wrap: wrap;
+    .img {
+        width: 20%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+
 }
 .layout-3 {
     .img {
@@ -97,5 +137,11 @@
     }
 }
 .layout-4 {
-
+    display: flex;
+    flex-wrap: wrap;
+    .img {
+        &:nth-child(2) {
+            display: none;
+        }
+    }
 }
