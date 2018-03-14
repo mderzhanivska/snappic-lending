@@ -1,7 +1,7 @@
 .examples {
     padding-top: 60px;
     padding-bottom: 45px;
-    display: none;
+    /*display: none;*/
 }
 .ex-description {
     text-align: center;
@@ -80,11 +80,17 @@
 }
 
 #layout {
-    padding-top: 60px;
-    @include clr();
+    position: relative;
+    margin-top: 60px;
+    transition: height .5s ease;
 
     .img {
-        transition: all .4s ease-in-out;
+        transition: all .5s ease;
+    }
+
+
+   /*.img {
+        animation: show-images 1s ease;
         &:hover {
             transform: scale(1.1);
         }
@@ -93,15 +99,6 @@
     &.layout-1 {
         & > .img:nth-child(n+3) {
             display: none;
-        }
-
-
-    }
-
-    &.layout-1,
-    &.layout-2 {
-        .img {
-            width: 20%;
         }
     }
 
@@ -148,7 +145,7 @@
 
     .layout__part {
         display: inline;
-    }
+    }*/
 
     .img {
         float: left;
@@ -158,8 +155,20 @@
             height: 100%;
         }
     }
-
 }
 
 
+@keyframes show-images {
+    from {
+        opacity: 0;
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
+    to {
+        opacity: 1;
+        position: relative;
+    }
+}
