@@ -30,6 +30,7 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
+
     &__btn {
         background-image: url("../img/layout1.png");
         background-repeat: no-repeat;
@@ -43,7 +44,7 @@
         &:hover {
             background-image: url("../img/layout1-blue.png");
         }
-        &:focus {
+        &.active {
             background-image: url("../img/layout1-blue.png");
             border-color: $deep-blue;
         }
@@ -70,78 +71,72 @@
             &:hover {
                 background-image: url("../img/layout4-blue.png");
             }
-            &:focus {
+            &.active {
                 background-image: url("../img/layout4-blue.png");
                 border-color: $deep-blue;
             }
         }
     }
 }
-.layout {
+
+#layout {
     padding-top: 60px;
-    .img {
-        width: 20%;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
+    @include clr();
 
-}
-.layout-1 {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    max-height: 330px;
-
-    .img {
-        width: 20%;
-        &:nth-child(3) {
+    &.layout-1 {
+        & > .img:nth-child(n+3) {
             display: none;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        } 
     }
-}
-.layout-2 {
-    display: flex;
-    flex-wrap: wrap;
-    .img {
-        width: 20%;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-        &:nth-child(3) {
-            display: none;
+
+    &.layout-1,
+    &.layout-2 {
+        .img {
+            width: 20%;
         }
     }
 
-}
-.layout-3 {
-    .img {
-        width: 19.6%;
-        height: 100%;
-        display: inline-block;
+    &.layout-3 {
+        .img.big-layout-3 {
+            width: 33.3333%;
+        }
+    }
 
-        &:nth-child(3) {
-            width: 574px;
-            height: 573px;
+    &.layout-4 {
+        .layout__part {
             float: left;
+            width: 33.3333%;
+            .img {
+                width: 50%;
+            }
         }
-        &:nth-child(1), &:nth-child(2), &:nth-child(5), &:nth-child(7) {
+
+        .img.big-layout-4 {
+            width: 33.3333%;
+        }
+    }
+
+    &.layout-3,
+    &.layout-4 {
+        .img {
+            width: 16.6666%;
+        }
+        .hide-with-big {
             display: none;
         }
     }
-}
-.layout-4 {
-    display: flex;
-    flex-wrap: wrap;
+
+    .layout__part {
+        display: inline;
+    }
+
     .img {
-        &:nth-child(2) {
-            display: none;
+        float: left;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
         }
     }
+
 }

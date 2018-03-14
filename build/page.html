@@ -223,19 +223,22 @@
       <div class="ex-description"> <span class="ex-description__comment">YOU HAVE OPTIONS</span>
         <h2 class="ex-description__title">More Examples</h2>
       </div>
-      <div class="layout-control"> <button class="layout-control__btn btn-1"></button> <button class="layout-control__btn btn-2"></button> <button class="layout-control__btn btn-3"></button> <button class="layout-control__btn btn-4"></button> </div>
-      <div class="layout layout-4">
-        <div class="img"><img src="img/ex1.png" alt=""></div>
-        <div class="img"><img src="img/ex2.png" alt=""></div>
-        <div class="img"><img src="img/ex11.png" alt=""></div>
-        <div class="img"><img src="img/ex3.png" alt=""></div>
-        <div class="img"><img src="img/ex4.png" alt=""></div>
-        <div class="img"><img src="img/ex5.png" alt=""></div>
+      <div class="layout-control" id="lay_control"> <button class="layout-control__btn btn-1 active" data-layout="layout-1"></button> <button class="layout-control__btn btn-2" data-layout="layout-2"></button> <button class="layout-control__btn btn-3" data-layout="layout-3"></button> <button class="layout-control__btn btn-4"
+          data-layout="layout-4"></button> </div>
+      <div class="layout-1" id="layout">
+        <div class="layout__part">
+          <div class="img big-layout-3"><img src="img/ex1.png" alt=""></div>
+          <!-- <div class="img"><img src="img/ex2.png" alt=""></div> -->
+          <div class="img"><img src="img/ex11.png" alt=""></div>
+          <div class="img"><img src="img/ex3.png" alt=""></div>
+          <div class="img"><img src="img/ex4.png" alt=""></div>
+        </div>
+        <div class="img big-layout-4"><img src="img/ex5.png" alt=""></div>
         <div class="img"><img src="img/ex6.png" alt=""></div>
         <div class="img"><img src="img/ex7.png" alt=""></div>
         <div class="img"><img src="img/ex8.png" alt=""></div>
         <div class="img"><img src="img/ex9.png" alt=""></div>
-        <div class="img"><img src="img/ex10.png" alt=""></div>
+        <div class="img hide-with-big"><img src="img/ex10.png" alt=""></div>
       </div>
     </section>
     <section class="sign">
