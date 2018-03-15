@@ -1,3 +1,4 @@
+// switching the examples in section examples
 
 (function() {
 
@@ -6,16 +7,16 @@
 	*/
   const config = {
     images: [
-    	'img/ex1.png',
-    	'img/ex11.png',
-    	'img/ex3.png',
-    	'img/ex4.png',
-    	'img/ex5.png',
-    	'img/ex6.png',
-    	'img/ex7.png',
-    	'img/ex8.png',
-    	'img/ex9.png',
-    	'img/ex10.png'
+    	'img/ex1.jpg',
+    	'img/ex2.png',
+    	'img/ex3.jpg',
+    	'img/ex4.jpg',
+    	'img/ex5.jpg',
+    	'img/ex6.jpg',
+    	'img/ex7.jpg',
+    	'img/ex8.jpeg',
+    	'img/ex9.jpg',
+    	'img/ex10.jpg'
     ],
     sliders: [{
       key: 'layout-1',
