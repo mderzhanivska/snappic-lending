@@ -2,15 +2,15 @@
 (function() {
 
   /**
-	*	@param {array} order: position image: 0 - first row, 1 - second row, -1 - big picture all column 
+	*	@param {array} order: position image: 0 - first row, 1 - second row, -1 - big picture all column
 	*/
   const config = {
     images: [
-    	'img/ex1.png', 
-    	'img/ex11.png', 
-    	'img/ex3.png', 
-    	'img/ex4.png', 
-    	'img/ex5.png', 
+    	'img/ex1.png',
+    	'img/ex11.png',
+    	'img/ex3.png',
+    	'img/ex4.png',
+    	'img/ex5.png',
     	'img/ex6.png',
     	'img/ex7.png',
     	'img/ex8.png',
@@ -43,10 +43,10 @@
   const btnLayout = document.getElementById('lay_control');
 
   if (btnLayout && layout) {
-  	btnLayout.innerHTML = config.sliders.map((btn, i) => 
+  	btnLayout.innerHTML = config.sliders.map((btn, i) =>
   		`<button class="layout-control__btn btn-${i + (i !== 0 || ' active')}" data-layout=${btn.key}></button>`
   	).join('');
-    layout.innerHTML = config.images.map(img => 
+    layout.innerHTML = config.images.map(img =>
     	`<div class="img"><img src=${img} alt=""></div>`
     ).join('');
 
@@ -76,7 +76,7 @@
 
   	const images = layout.querySelectorAll('.img');
   	const order = config.sliders.find(s => s.key === key).order;
-  	
+
   	const maxWidth = layout.clientWidth;
   	const maxHeight = Math.max(...order) + 1;
   	const rowSize = order.reduce((p, n) => { n || ++p; return p; }, 0);
@@ -128,6 +128,15 @@
   }
 })();
 
+
+//scroll down button for more examples
+
+$(function() {
+  $('.scroll-down').click (function() {
+    $('html, body').animate({scrollTop: $('section.examples').offset().top }, 'slow');
+    return false;
+  });
+});
 
 
 
