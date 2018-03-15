@@ -1,7 +1,7 @@
 .examples {
     padding-top: 60px;
     padding-bottom: 45px;
-    /*display: none;*/
+    //display: none;
 }
 .ex-description {
     text-align: center;
@@ -30,7 +30,12 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
-
+    @media #{$tablet} {
+        width: 40%;
+    }
+    @media #{$mobile} {
+        width: 90%;
+    }
     &__btn {
         background-image: url("../img/layout1.png");
         background-repeat: no-repeat;
