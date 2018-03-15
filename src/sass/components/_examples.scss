@@ -1,8 +1,8 @@
 .examples {
     padding-top: 60px;
-    padding-bottom: 45px;
-    //display: none;
+    padding-bottom: 45px; //display: none;
 }
+
 .ex-description {
     text-align: center;
     &__comment {
@@ -23,6 +23,7 @@
         letter-spacing: -0.69px;
     }
 }
+
 .layout-control {
     padding-top: 33px;
     width: 30%;
@@ -88,13 +89,24 @@
     position: relative;
     margin-top: 60px;
     transition: height .5s ease;
+    overflow: hidden;
 
     .img {
+        position: absolute;
         transition: all .5s ease;
+        overflow: hidden;
+        
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
     }
 
 
-   /*.img {
+    /*.img {
         animation: show-images 1s ease;
         &:hover {
             transform: scale(1.1);
@@ -151,29 +163,47 @@
     .layout__part {
         display: inline;
     }*/
-
-    .img {
-        float: left;
-        img {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-    }
 }
 
 
 @keyframes show-images {
     from {
-        opacity: 0;
-        visibility: visible;
         position: absolute;
         top: 0;
         left: 0;
+        opacity: 0;
+        visibility: visible;
     }
 
     to {
         opacity: 1;
         position: relative;
+    }
+}
+
+
+.loader {
+    animation: spin 1s linear infinite;
+    border: 3px solid #ddd;
+    border-top: 3px solid #42a5f5;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    margin: 0 auto 20px;
+}
+
+@-webkit-keyframes spin {
+    to {
+        border-top-color: #ec407a;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    to {
+        border-top-color: #ec407a;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
