@@ -97,11 +97,12 @@ class GridSlider {
       if (order.length <= i) {
         style.opacity = 0;
         style.visibility = 'hidden';
+        style.display = 'none';
         continue;
       }
 
-
       style.opacity = 1;
+      style.display = 'block';
       style.visibility = 'visible';
       style.zIndex = order.length - i;
 
