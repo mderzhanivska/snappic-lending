@@ -1,10 +1,12 @@
 .banner {
     position: relative;
-    padding-top: 38px;
-    padding-bottom: 26px;
+    padding-top: 37px;
+    padding-bottom: 36px;
     overflow: hidden;
+    width: 100%;
     .banner-logo {
         display: none;
+        text-align: center;
         @media #{$mobile} {
             display: block;
         }

@@ -74,5 +74,31 @@ body {
         font-size: 12px;
     }
 }
+.btn {
+    display: inline-block;
+    position: relative;
+    border-radius: 115px;
+    border: 1px solid $grey;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Avenir Black', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.59px;
+    color: $black;
+    margin-top: 0;
+    text-align: center;
+    padding: 20px 64px;
+    overflow: hidden;
+    z-index: 4;
+    transition: color .4s, border-color .2s;
+    @media #{$tablet} {
+        padding: 14px 53px;
+    }
+    //@media #{$phone} {
+    //    display: none;
+    //}
+
+}
 
 

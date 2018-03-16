@@ -27,3 +27,18 @@ import GridSlider from './lib/GridSlider';
 })();
 
 
+// menu
+(function() {
+  let overlay = $('.js-overlay'), burger = $('.js-burger');
+  burger.on('click tocuhstart', function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $('.js-nav').slideToggle();
+    overlay.toggleClass('visible');
+  });
+  overlay.on('click tocuhstart', function(e) {
+    burger.trigger('click');
+  });
+}());
+
+

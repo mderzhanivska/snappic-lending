@@ -16,11 +16,25 @@
       <section class="banner">
         <div class="container bg-cont">
           <header>
-            <div class="header-container">
+            <div class="header-container header"> <a class="header__logo" href="/"> 
+<svg class="icon icon-s"><use xlink:href="img/sprite.svg#icon-s"></use></svg>
+</a> <button class="burger js-burger">
+      
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+
+      
+<svg class="icon icon-burger"><use xlink:href="img/sprite.svg#icon-burger"></use></svg>
+
+    </button>
+              <nav class="header__nav js-nav" style="display: none;">
+                <div class="header__nav-left"><a class="header__nav-link" href="results.html">Results</a><a class="header__nav-link" href="pricing.html">Pricing</a></div>
+                <div class="header__nav-right"><a class="header__nav-btn btn btn_sm" href="pricing.html">Try It Out</a><a class="login header__nav-link header__nav-right" href="https://app.snappic.io">Log In</a></div>
+              </nav>
               <div class="logo"> <a href="#"><img src="img/logo.svg" alt="" class="logo__im"></a> </div>
               <div class="login"> <button class="login__btn">Try It Out - It’s free</button> <a href="#" class="login__link">Log In</a> </div>
             </div>
           </header>
+          <div class="overlay js-overlay"></div>
           <div class="logo banner-logo"> <a href="#"><img src="img/logo.svg" alt="" class="logo__im"></a> </div>
           <div class="info">
             <div class="info__txt text">

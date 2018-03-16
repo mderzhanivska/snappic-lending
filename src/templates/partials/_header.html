@@ -1,11 +1,21 @@
 <header>
-  <div class="header-container">
+  <div class="header-container header">
+    <a class="header__logo" href="/"> {{ mixins.icon('s') }}</a>
+    <button class="burger js-burger">
+      {{ mixins.icon('close') }}
+      {{ mixins.icon('burger') }}
+    </button>
+    <nav class="header__nav js-nav" style="display: none;">
+      <div class="header__nav-left"><a class="header__nav-link" href="results.html">Results</a><a class="header__nav-link" href="pricing.html">Pricing</a></div>
+      <div class="header__nav-right"><a class="header__nav-btn btn btn_sm" href="pricing.html">Try It Out</a><a class="login header__nav-link header__nav-right" href="https://app.snappic.io">Log In</a></div>
+    </nav>
     <div class="logo">
-      <a href="#"><img src="img/logo.svg" alt="" class="logo__im"></a>
-    </div>
-    <div class="login">
-      <button class="login__btn">Try It Out - It’s free</button>
-      <a href="#" class="login__link">Log In</a>
-    </div>
+          <a href="#"><img src="img/logo.svg" alt="" class="logo__im"></a>
+        </div>
+        <div class="login">
+          <button class="login__btn">Try It Out - It’s free</button>
+          <a href="#" class="login__link">Log In</a>
+        </div>
   </div>
   </header>
+<div class="overlay js-overlay"></div>
