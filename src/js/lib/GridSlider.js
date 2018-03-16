@@ -61,7 +61,6 @@ class GridSlider {
 
     !activeEl || activeEl.classList.remove('active');
     dom.classList.add('active');
-    layout.className = dom.dataset.layout;
 
     this._active = dom.dataset.layout;
     this._generateImages(this._active);
@@ -70,10 +69,8 @@ class GridSlider {
 
   _generateImages(isFirst = false) {
     for (let i = 0; i < this.images.length; i++) {
-      Object.assign(this.images[i].style, {
-        top: 0,
-        left: 0
-      });
+      this.images[i].style.top = 0;
+      this.images[i].style.left = 0;
     }
 
     setTimeout(this._animateImages, isFirst ? this._delay : 0);
@@ -95,15 +92,11 @@ class GridSlider {
       const style = this.images[i].style;
 
       if (order.length <= i) {
-        style.opacity = 0;
-        style.visibility = 'hidden';
         style.display = 'none';
         continue;
       }
 
-      style.opacity = 1;
       style.display = 'block';
-      style.visibility = 'visible';
       style.zIndex = order.length - i;
 
       if (typeof(isAnimate) === 'boolean' && isAnimate) {
@@ -119,7 +112,7 @@ class GridSlider {
       }
     }
 
-    layout.style.height = `${heightRow * maxHeight}px`;
+    this.layout.style.height = `${heightRow * maxHeight}px`;
   }
 
 

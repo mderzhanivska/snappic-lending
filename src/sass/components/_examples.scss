@@ -90,14 +90,13 @@
     margin-top: 60px;
     overflow: hidden;
     transition: height .5s ease;
+    transform: translateZ(0);
 
     .img {
         position: absolute;
         overflow: hidden;
-        opacity: 0;
-        visibility: hidden;
         transition: all .5s ease;
-        
+
         img {
             display: block;
             width: 100%;
@@ -105,107 +104,5 @@
             object-fit: cover;
             object-position: 50% 50%;
         }
-    }
-
-
-    /*.img {
-        animation: show-images 1s ease;
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-
-    &.layout-1 {
-        & > .img:nth-child(n+3) {
-            display: none;
-        }
-    }
-
-    &.layout-3 {
-        .img.big-layout-3 {
-            width: 40%;
-        }
-        .img {
-            &:nth-child(2) {
-                display: none;
-            }
-        }
-
-    }
-
-    &.layout-4 {
-        .layout__part {
-            float: left;
-            width: 33.3333%;
-            .img {
-                width: 50%;
-            }
-        }
-
-        .img.big-layout-4 {
-            width: 33.3333%;
-        }
-    }
-
-
-    &.layout-4 {
-        .img {
-            width: 16.6666%;
-        }
-        .hide-with-big {
-            display: none;
-        }
-    }
-    &.layout-3 {
-        .hide-with-big {
-            display: none;
-        }
-    }
-
-    .layout__part {
-        display: inline;
-    }*/
-}
-
-
-@keyframes show-images {
-    from {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        visibility: visible;
-    }
-
-    to {
-        opacity: 1;
-        position: relative;
-    }
-}
-
-
-.loader {
-    animation: spin 1s linear infinite;
-    border: 3px solid #ddd;
-    border-top: 3px solid #42a5f5;
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    margin: 0 auto 20px;
-}
-
-@-webkit-keyframes spin {
-    to {
-        border-top-color: #ec407a;
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    to {
-        border-top-color: #ec407a;
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
     }
 }
