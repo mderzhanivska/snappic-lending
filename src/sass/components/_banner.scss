@@ -3,6 +3,16 @@
     padding-top: 38px;
     padding-bottom: 26px;
     overflow: hidden;
+    .logo {
+        display: none;
+        @media #{$mobile} {
+            display: block;
+        }
+        img {
+            width: 35%;
+        }
+
+    }
 }
 .bg-cont {
     position: relative;
@@ -24,15 +34,21 @@
     @media #{$phone} {
         flex-direction: column;
     }
+    @media #{$mobile} {
+        padding-top: 25px;
+    }
     &__txt {
         @media #{$phone} {
-            order: 2;
+            order: 1;
             width: 100%;
         }
     }
     &__img {
         position: relative;
         padding-left: 120px;
+        @media #{$mobile} {
+            padding-top: 50px;
+        }
         &:before {
             position: absolute;
             content: '';
@@ -41,12 +57,31 @@
             top: 14%;
             left: 11%;
             background-image: url("../img/approved-ig-logo.png");
+            @media #{$mobile} {
+                top: 1%;
+                left: 45%;
+                background-size: 50%;
+                background-repeat: no-repeat;
+            }
+        }
+        &:after {
+            display: none;
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 12px;
+            bottom: 0%;
+            left: 50%;
+            background-image: url("../img/page-1.png");
+            @media #{$mobile} {
+                display: block;
+            }
         }
         @media #{$desktop} {
             padding-left: 0;
         }
         @media #{$phone} {
-            order: 1;
+            order: 2;
         }
         img {
             @media #{$desktop} {
@@ -83,6 +118,11 @@
             font-weight: 700;
         }
     }
+    .main {
+        @media #{$mobile} {
+            font-size: 34px;
+        }
+    }
     &__btn {
         position: relative;
         border-radius: 115px;
@@ -107,7 +147,7 @@
             margin-top: 40px;
         }
         @media #{$phone} {
-            margin-top: 33px;
+            display: none;
         }
         &:before {
             position: absolute;

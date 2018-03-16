@@ -26,6 +26,7 @@
         }
         @media #{$phone} {
             flex-direction: column;
+            text-align: center;
         }
         &__text {
             padding-left: 40px;
@@ -41,18 +42,19 @@
             @media #{$phone} {
                 width: 100%;
                 padding-top: 40px;
+                order: 1;
+                padding-left: 0;
             }
             .description__desc {
                 padding-right: 122px;
                 @media #{$mobile} {
-                    padding-right: 10px;
+                    padding: 0 30px;
                 }
             }
             .list__desc {
                 padding-right: 49px;
                 @media #{$mobile} {
-                    padding-right: 10px;
-                    padding-top: 18px;
+                    padding: 10px 30px 0;
                 }
             }
         }
@@ -64,6 +66,7 @@
             }
             @media #{$phone} {
                 width: 100%;
+                order: 2;
             }
             img {
                 width: 100%;
@@ -72,6 +75,9 @@
                 }
                 @media #{$phone} {
                     width: 100%;
+                }
+                @media #{$phone} {
+                    width: 120%;
                 }
             }
         }

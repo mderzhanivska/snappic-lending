@@ -7,9 +7,15 @@ footer {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    @media #{$mobile} {
+        padding-bottom: 20px;
+    }
 }
 .links {
 	display: flex;
+    @media #{$mobile} {
+        flex-direction: column;
+    }
     &__logo {
         padding-left: 15px;
         img {
@@ -17,7 +23,7 @@ footer {
             height: 30px;
         }
         @media #{$mobile} {
-            padding-top: 25px;
+            text-align: center;
         }
 
     }
@@ -36,6 +42,7 @@ footer {
         @media #{$mobile} {
             justify-content: center;
             padding-left: 26px;
+            padding-top: 10px;
         }
 		li {
             margin-right: 41px;
@@ -51,7 +58,8 @@ footer {
                 line-height: 12px;
                 letter-spacing: 1.5px;
                 @media #{$phone} {
-                    font-size: 10px;
+                    font-size: 13px;
+                    margin-top: 25px;
                 }
 			}
 		}
@@ -62,6 +70,9 @@ footer {
     padding-left: 15px;
     @media #{$mobile} {
         text-align: center;
+        padding-top: 65px;
+        display: flex;
+        flex-direction: column;
     }
 	.copyright {
 		display: block;
@@ -71,6 +82,10 @@ footer {
         font-weight: 500;
         line-height: 12px;
         letter-spacing: 1.11px;
+        @media #{$mobile} {
+            order: 2;
+            padding: 30px;
+        }
 	}
 	.author {
 		padding-top: 20px;
@@ -84,6 +99,8 @@ footer {
         letter-spacing: 2px;
         @media #{$mobile} {
             line-height: 20px;
+            order: 1;
+            padding: 0 60px;
         }
         img {
             margin: 0 20px 0 8px;

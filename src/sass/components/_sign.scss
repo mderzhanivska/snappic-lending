@@ -7,6 +7,10 @@
         padding-top: 49px;
         padding-bottom: 37px;
     }
+    @media #{$mobile} {
+        padding-bottom: 70px;
+    }
+
     &:before {
         position: absolute;
         content: '';
@@ -30,12 +34,18 @@
         }
         @media #{$mobile} {
             bottom: -26px;
+            width: 95px;
+            height: 78px;
         }
     }
 }
 .sign-up {
     text-align: center;
-
+    @media #{$mobile} {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__title {
         font-family: 'Adobe Caslon Pro', sans-serif;
         font-size: 46px;
@@ -44,6 +54,9 @@
         letter-spacing: -0.69px;
         @media #{$desktop} {
             font-size: 44px;
+        }
+        @media #{$mobile} {
+           order: 2;
         }
     }
     &__comment {
@@ -57,6 +70,10 @@
         letter-spacing: 1.3px;
         @media #{$desktop} {
             font-size: 12px;
+        }
+        @media #{$mobile} {
+            order: 1;
+            padding: 0 35px;
         }
     }
     &__btn {
@@ -81,7 +98,8 @@
             padding: 17px 42px 17px 81px;
         }
         @media #{$mobile} {
-            font-size: 10px;
+            font-size: 14px;
+            order: 3;
         }
         &:before {
             position: absolute;
@@ -126,6 +144,9 @@
         padding-top: 30px;
         display: flex;
         justify-content: center;
+        @media #{$mobile} {
+            order: 4;
+        }
         span {
             color: #787575;
             font-family: 'Avenir Medium', sans-serif;
@@ -135,6 +156,9 @@
             letter-spacing: 0.65px;
             @media #{$desktop} {
                 font-size: 17px;
+            }
+            @media #{$mobile} {
+                font-size: 16px;
             }
         }
         div {
@@ -151,6 +175,9 @@
     padding-bottom: 104px;
     @media #{$tablet} {
         padding-bottom: 93px;
+    }
+    @media #{$mobile} {
+        padding-bottom: 120px;
     }
     &:after {
         display: none;
@@ -170,7 +197,7 @@
             bottom: 17px;
         }
         @media #{$mobile} {
-            bottom: 17px;
+            bottom: 22px;
         }
     }
     .sign-up__btn {

@@ -7,6 +7,9 @@
     @media #{$phone} {
         padding-bottom: 70px;
     }
+    @media #{$mobile} {
+        text-align: center;
+    }
 }
 .wrap {
     display: flex;
@@ -38,6 +41,11 @@
             padding-top: 30px;
             padding-left: 45px;
         }
+        @media #{$phone} {
+            width: 100%;
+            padding: 10px 15px 0;
+        }
+
     }
     &__btn {
         position: relative;
@@ -62,9 +70,7 @@
             padding: 14px 10px;
         }
         @media #{$mobile} {
-            font-size: 9px;
-            padding: 14px 5px;
-            margin-right: 20px;
+            display: none;
         }
         &:before {
             position: absolute;
@@ -128,7 +134,9 @@
             padding-top: 10px;
         }
         @media #{$mobile} {
-            padding-right: 0;
+            padding: 0 30px;
+            font-size: 17px;
+            line-height: 26px;
         }
     }
     &__list {
@@ -147,6 +155,7 @@
     }
     @media #{$mobile} {
         padding-left: 0;
+        padding-top: 50px;
     }
     &__title {
         color: $orange;
@@ -158,7 +167,9 @@
             font-size: 17px;
         }
         @media #{$mobile} {
-            padding-left: 56px;
+            padding: 0 60px;
+            font-size: 19px;
+            line-height: 29px;
         }
 
     }
@@ -175,7 +186,9 @@
             font-size: 15px;
         }
         @media #{$mobile} {
-            padding-right: 0;
+            padding: 10px 20px 0;
+            font-size: 17px;
+            line-height: 26px;
         }
     }
     &__icon {
@@ -191,6 +204,9 @@
         }
         @media #{$tablet} {
             top: 9px;
+        }
+        @media #{$mobile} {
+            display: none;
         }
     }
 }
@@ -221,9 +237,7 @@
         &:hover .example1__mask {
             visibility: visible;
             opacity: 1;
-            @media #{$mobile} {
-                visibility: hidden;
-            }
+
         }
         img {
             @media #{$desktop} {
@@ -242,6 +256,9 @@
         visibility: hidden;
         opacity: 0;
         transition: all .3s ease-in-out;
+        @media #{$mobile} {
+            height: 77%;
+        }
     }
     &__link {
         display: inline-block;
@@ -259,6 +276,10 @@
         }
         @media #{$tablet} {
             margin-top: 70px;
+        }
+        @media #{$mobile} {
+            margin-top: 45%;
+            font-size: 8px;
         }
         &:hover {
             text-decoration: underline;
@@ -290,9 +311,6 @@
         &:hover .photos__mask {
             visibility: visible;
             opacity: 1;
-            @media #{$mobile} {
-                visibility: hidden;
-            }
         }
         &.single {
             width: 100%;
@@ -301,7 +319,6 @@
                     font-size: 8px;
                 }
             }
-
         }
         img {
             height: 100%;

@@ -2,6 +2,9 @@
     background-color: $light-grey;
     padding-top: 38px;
     padding-bottom: 30px;
+    @media #{$mobile} {
+        display: none;
+    }
 }
 .brand-images {
     display: flex;

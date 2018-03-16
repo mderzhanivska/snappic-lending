@@ -4,6 +4,10 @@
 	//border: 20px solid $border;
     background-image: linear-gradient(78deg, rgba(166, 188, 240, 0.6) 0%, rgba(194, 212, 253, 0.6) 20%, rgba(255, 255, 255, 0.6) 130%);
 	text-align: center;
+    @media #{$mobile} {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
 }
 .information {
     padding-top: 100px;
@@ -13,6 +17,10 @@
     background-color: $white;
     @media #{$tablet} {
         padding-top: 60px;
+    }
+    @media #{$mobile} {
+        margin-left: 12px;
+        margin-right: 12px;
     }
 	&__comment {
         color: $almost-black;
@@ -69,6 +77,11 @@
 		&__col {
 			width: 20%;
             padding-bottom: 36px;
+            img {
+                @media #{$mobile} {
+
+                }
+            }
             &:nth-child(4) {
                 margin-top: -20px;
             }
@@ -83,11 +96,8 @@
             @media #{$tablet} {
                 width: 20%;
             }
-            @media #{$phone} {
+            @media #{$mobile} {
                 width: 50%;
-            }
-            @media #{$phone} {
-                width: 100%;
             }
 		}
     }

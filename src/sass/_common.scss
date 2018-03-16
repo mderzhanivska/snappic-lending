@@ -22,7 +22,8 @@ body {
         font-size: 35px;
     }
     @media #{$mobile} {
-        font-size: 25px;
+        font-size: 28px;
+        padding: 20px 25px 0;
     }
 }
 .comment {
@@ -37,7 +38,8 @@ body {
         font-size: 12px;
     }
     @media #{$mobile} {
-        font-size: 9px;
+        font-size: 12px;
+        letter-spacing: 2.1px;
     }
 }
 .list-title {

@@ -2,6 +2,9 @@ header {
     background: transparent;
     position: relative;
     z-index: 20;
+    @media #{$mobile} {
+        display: none;
+    }
 }
 
 .header-container {
