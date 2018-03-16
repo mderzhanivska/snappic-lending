@@ -237,6 +237,9 @@
         &:hover .example1__mask {
             visibility: visible;
             opacity: 1;
+            @media #{$phone} {
+                visibility: hidden;
+            }
 
         }
         img {
