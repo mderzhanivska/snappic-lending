@@ -193,12 +193,14 @@
     }
     &__icon {
         position: absolute;
-        width: 45px;
+        width: 73px;
         top: 30px;
         left: 0;
-        height: 45px;
+        height: 73px;
         border-radius: 50%;
-
+        img {
+            width: 100%;
+        }
         @media #{$desktop} {
             top: 5px;
         }
