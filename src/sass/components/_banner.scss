@@ -32,7 +32,16 @@
     }
     &__img {
         position: relative;
-        padding-left: 46px;
+        padding-left: 120px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 106px;
+            height: 106px;
+            top: 14%;
+            left: 11%;
+            background-image: url("../img/approved-ig-logo.png");
+        }
         @media #{$desktop} {
             padding-left: 0;
         }

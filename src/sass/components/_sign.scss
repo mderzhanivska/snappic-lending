@@ -90,8 +90,9 @@
             left: 57px;
             width: 30px;
             height: 30px;
-            background-image: url("../img/instagram-logo-black-transparent.png");
+            background-image: url("../img/instagram-logo-white.svg");
             background-repeat: no-repeat;
+            background-size: 75%;
             @media #{$tablet} {
                 top: 13px;
                 left: 45px;
@@ -103,7 +104,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: $white;
+            background: $light-grey;
             transition: 0.3s ease;
             content: '';
             z-index: -1;
