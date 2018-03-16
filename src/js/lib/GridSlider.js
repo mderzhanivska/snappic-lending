@@ -92,12 +92,9 @@ class GridSlider {
       const style = this.images[i].style;
 
       if (order.length <= i) {
-        style.display = 'none';
+        this.images[i].classList.remove('show');
         continue;
       }
-
-      style.display = 'block';
-      style.zIndex = order.length - i;
 
       if (typeof(isAnimate) === 'boolean' && isAnimate) {
         this._getPositions(style, order, widthSize, heightRow, bigSize, i);
@@ -110,6 +107,9 @@ class GridSlider {
         style.width = `${widthSize}%`;
         style.height = `${maxWidth / 100 * widthSize}px`;
       }
+
+      style.zIndex = order.length - i;
+      this.images[i].classList.add('show');
     }
 
     this.layout.style.height = `${heightRow * maxHeight}px`;
@@ -117,7 +117,6 @@ class GridSlider {
 
 
   _getPositions(style, order, widthSize, heightRow, bigSize, i) {
-
     const top = order[i] !== -1 ? heightRow * order[i] : 0;
     const left = order.filter((_, index) => index < i).reduce((p, n) => {
       if (n === order[i] || (order[i] === -1 && n === 0)) {
