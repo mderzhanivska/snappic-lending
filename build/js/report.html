@@ -39,9 +39,9 @@
 /**
  * filesize
  *
- * @copyright 2017 Jason Mulligan <jason.mulligan@avoidwork.com>
+ * @copyright 2018 Jason Mulligan <jason.mulligan@avoidwork.com>
  * @license BSD-3-Clause
- * @version 3.5.11
+ * @version 3.6.0
  */
 (function (global) {
 	var b = /^(b|B)$/,
@@ -84,6 +84,7 @@
 		    output = void 0,
 		    round = void 0,
 		    unix = void 0,
+		    separator = void 0,
 		    spacer = void 0,
 		    standard = void 0,
 		    symbols = void 0;
@@ -95,14 +96,15 @@
 		bits = descriptor.bits === true;
 		unix = descriptor.unix === true;
 		base = descriptor.base || 2;
-		round = descriptor.round !== undefined ? descriptor.round : unix ? 1 : 2;
-		spacer = descriptor.spacer !== undefined ? descriptor.spacer : unix ? "" : " ";
+		round = descriptor.round !== void 0 ? descriptor.round : unix ? 1 : 2;
+		separator = descriptor.separator !== void 0 ? descriptor.separator || "" : "";
+		spacer = descriptor.spacer !== void 0 ? descriptor.spacer : unix ? "" : " ";
 		symbols = descriptor.symbols || descriptor.suffixes || {};
 		standard = base === 2 ? descriptor.standard || "jedec" : "jedec";
 		output = descriptor.output || "string";
 		full = descriptor.fullform === true;
 		fullforms = descriptor.fullforms instanceof Array ? descriptor.fullforms : [];
-		e = descriptor.exponent !== undefined ? descriptor.exponent : -1;
+		e = descriptor.exponent !== void 0 ? descriptor.exponent : -1;
 		num = Number(arg);
 		neg = num < 0;
 		ceil = base > 2 ? 1000 : 1024;
@@ -178,6 +180,10 @@
 
 		if (full) {
 			result[1] = fullforms[e] ? fullforms[e] : fullform[standard][e] + (bits ? "bit" : "byte") + (result[0] === 1 ? "" : "s");
+		}
+
+		if (separator.length > 0) {
+			result[0] = result[0].toString().replace(".", separator);
 		}
 
 		return result.join(spacer);
@@ -2043,7 +2049,7 @@ onGroupTransform:[],onGroupTransformEnd:[],onKeyUp:[],selection:null,open:null,e
   <body>
     <div id="treemap" class="treemap"></div>
     <script>
-      window.chartData = [{"label":"app.js","weight":805731,"statSize":279742,"parsedSize":805731,"groups":[{"label":"src","path":"./src","weight":18758,"statSize":7991,"parsedSize":18758,"groups":[{"label":"js","path":"./src/js","weight":18758,"statSize":7991,"parsedSize":18758,"groups":[{"id":0,"label":"config.js","path":"./src/js/config.js","weight":1428,"statSize":409,"parsedSize":1428},{"label":"lib","path":"./src/js/lib","weight":13879,"statSize":6321,"parsedSize":13879,"groups":[{"id":1,"label":"GridSlider.js","path":"./src/js/lib/GridSlider.js","weight":13879,"statSize":6321,"parsedSize":13879}]},{"id":3,"label":"app.js","path":"./src/js/app.js","weight":3451,"statSize":1261,"parsedSize":3451}]}]},{"label":"node_modules","path":"./node_modules","weight":786973,"statSize":271751,"parsedSize":786973,"groups":[{"label":"jquery","path":"./node_modules/jquery","weight":786973,"statSize":271751,"parsedSize":786973,"groups":[{"label":"dist","path":"./node_modules/jquery/dist","weight":786973,"statSize":271751,"parsedSize":786973,"groups":[{"id":2,"label":"jquery.js","path":"./node_modules/jquery/dist/jquery.js","weight":786973,"statSize":271751,"parsedSize":786973}]}]}]}]}];
+      window.chartData = [{"label":"app.js","weight":1041667,"statSize":368916,"parsedSize":1041667,"groups":[{"label":"node_modules","path":"./node_modules","weight":1022714,"statSize":360706,"parsedSize":1022714,"groups":[{"label":"jquery","path":"./node_modules/jquery","weight":786917,"statSize":271751,"parsedSize":786917,"groups":[{"label":"dist","path":"./node_modules/jquery/dist","weight":786917,"statSize":271751,"parsedSize":786917,"groups":[{"id":0,"label":"jquery.js","path":"./node_modules/jquery/dist/jquery.js","weight":786917,"statSize":271751,"parsedSize":786917}]}]},{"label":"slick-carousel","path":"./node_modules/slick-carousel","weight":235797,"statSize":88955,"parsedSize":235797,"groups":[{"label":"slick","path":"./node_modules/slick-carousel/slick","weight":235797,"statSize":88955,"parsedSize":235797,"groups":[{"id":3,"label":"slick.js","path":"./node_modules/slick-carousel/slick/slick.js","weight":235797,"statSize":88955,"parsedSize":235797}]}]}]},{"label":"src","path":"./src","weight":18953,"statSize":8210,"parsedSize":18953,"groups":[{"label":"js","path":"./src/js","weight":18953,"statSize":8210,"parsedSize":18953,"groups":[{"id":1,"label":"config.js","path":"./src/js/config.js","weight":1380,"statSize":409,"parsedSize":1380},{"label":"lib","path":"./src/js/lib","weight":13497,"statSize":6312,"parsedSize":13497,"groups":[{"id":2,"label":"GridSlider.js","path":"./src/js/lib/GridSlider.js","weight":13497,"statSize":6312,"parsedSize":13497}]},{"id":4,"label":"app.js","path":"./src/js/app.js","weight":4076,"statSize":1489,"parsedSize":4076}]}]}]}];
     </script>
   </body>
 </html>

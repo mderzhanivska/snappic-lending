@@ -27,6 +27,7 @@
     }
     @media #{$mobile} {
         text-align: center;
+        padding-bottom: 0;
     }
 }
 
@@ -187,6 +188,7 @@
             }
             @media #{$mobile} {
                 width: 100%;
+                box-shadow: none;
             }
         }
     }
@@ -207,6 +209,9 @@
         left: 0px;
         text-align: center;
         transition: all .3s ease-in-out;
+        @media #{$mobile} {
+            height: 86.6%;
+        }
 
     }
     &__link {
@@ -275,12 +280,23 @@
     left: 5%;
     width: 90%;
     height: 73%;
+    @media #{$mobile} {
+        height: 74.6%;
+    }
 }
 .mask-border {
     height: 83.65%;
+    @media #{$mobile} {
+        width: 100%;
+        height: 85.65%;
+    }
 }
 .mask-bg {
     height: 83.9%;
+    @media #{$phone} {
+        height: 89.6%;
+    }
+
 }
 .bg {
     left: 27%;

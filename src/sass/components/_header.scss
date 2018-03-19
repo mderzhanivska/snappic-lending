@@ -7,7 +7,7 @@ header {
         background: $white;
     }
     @media #{$mobile} {
-        display: none;
+        //display: none;
     }
 }
 
@@ -28,9 +28,9 @@ header {
 }
 .logo {
     padding-top: 17px;
-    //@media #{$mobile} {
-    //    display: none;
-    //}
+    @media #{$mobile} {
+        display: none;
+    }
     img {
         @media #{$phone} {
             width: 100%;
@@ -42,9 +42,9 @@ header {
 }
 .login {
     overflow: hidden;
-    //@media #{$phone} {
-    //    display: none;
-    //}
+    @media #{$phone} {
+        display: none;
+    }
     @media #{$mobile} {
         justify-content: center;
         padding-top: 20px;
@@ -136,18 +136,21 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    //background: #FFF;
+    background: transparent;
     padding: 0;
     z-index: -20;
+    @media #{$phone} {
+        background: $white;
+    }
     &__logo {
         display: none;
         margin-top: 17px;
         margin-left: 10px;
         width: 15px;
         height: 22px;
-        //@media #{$phone} {
-        //    display: inline-block;
-        //}
+        @media #{$phone} {
+            display: inline-block;
+        }
     }
     &__nav {
         text-align: center;
@@ -231,9 +234,9 @@ header {
     height: 52px;
     padding: 3px 20px;
     font-size: 0;
-    //@media #{$phone} {
-    //    display: block;
-    //}
+    @media #{$phone} {
+        display: block;
+    }
 
 }
 .icon {

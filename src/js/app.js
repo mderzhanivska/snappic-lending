@@ -1,5 +1,5 @@
 // switching the examples in section examples
-
+import 'slick-carousel';
 import config from './config';
 import GridSlider from './lib/GridSlider';
 
@@ -40,5 +40,15 @@ import GridSlider from './lib/GridSlider';
     burger.trigger('click');
   });
 }());
+
+$('.slider-js').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true
+  // nextArrow: '<img src="img/arrow-right.png>',
+  // prevArrow: '<img src="img/arrow-right.png>'
+});
+
 
 

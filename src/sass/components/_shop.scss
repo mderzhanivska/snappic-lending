@@ -17,6 +17,11 @@
             background-repeat: no-repeat;
             background-origin: border-box;
             z-index: -1;
+            @media #{$mobile} {
+                top: -28%;
+                left: 14%;
+            }
+
         }
     }
     .wrap{
