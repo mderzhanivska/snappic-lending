@@ -46,8 +46,6 @@ $('.slider-js').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true
-  // nextArrow: '<img src="img/arrow-right.png>',
-  // prevArrow: '<img src="img/arrow-right.png>'
 });
 
 
